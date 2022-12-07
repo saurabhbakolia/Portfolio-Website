@@ -1,0 +1,21 @@
+import React from 'react'
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si'
+
+const SocialMediaIcons = () => {
+    return (
+        <>
+            <div className='h-full w-full flex justify-center items-center'>
+                <ul className='w-[30%] rounded-full flex flex-col space-y-1 text-2xl border-2 border-gray-200 items-center text-gray-600'>
+                    <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaFacebookF/></li>
+                    <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaInstagram/></li>
+                    <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaGithub/></li>
+                    <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaLinkedin/></li>
+                    <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white text-xl'><SiGmail/></li>
+                </ul>
+            </div>
+        </>
+    )
+}
+
+export default SocialMediaIcons
