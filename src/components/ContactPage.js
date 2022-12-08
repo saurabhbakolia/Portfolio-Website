@@ -10,7 +10,7 @@ const ContactPage = () => {
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[14%] h-[89.90vh]'><SocialMediaIcons/></div>
+                    <div className='w-[13em] h-[89.90vh]'><SocialMediaIcons/></div>
                     <div className='flex justify-between items-center w-[86%] h-[89.90vh] mr-[15.5%]'>
                         <div className='w-[46%] flex-col space-y-4'>
                             <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider'>Hello I'm</h3>

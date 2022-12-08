@@ -10,7 +10,7 @@ const AboutPage = () => {
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[16%] h-[89.90vh]'><SocialMediaIcons /></div>
+                    <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex justify-between items-center w-[86%] h-[64vh] mr-[15.5%] border-2 border-gray-200 bg-white rounded-3xl'>
                         <div className='w-[68%] text-center about__page__Div h-full '>
                             <img src={Image} alt="code_image" className='object-cover h-full w-[full]' />

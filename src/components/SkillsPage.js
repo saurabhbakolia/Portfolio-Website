@@ -1,38 +1,72 @@
 import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
-import { Link } from 'react-router-dom'
-import Image from '../assets/code.jpg'
+import { FaLaptopCode, FaReact, FaPython, FaLinux, FaGitAlt } from 'react-icons/fa'
+import { GrNode } from 'react-icons/gr'
+import { GoTools } from 'react-icons/go'
+import SkillsProgress from './SkillsProgress'
+import { DiMongodb } from 'react-icons/di'
+import { SiJavascript, SiPhp, SiMicrosoftoffice, SiExpress, SiTailwindcss } from 'react-icons/si'
+
+
 
 const SkillsPage = () => {
-  return (
-    <>
+    return (
+        <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[14%] h-[89.90vh]'><SocialMediaIcons/></div>
-                    <div className='flex justify-between items-center w-[86%] h-[89.90vh] mr-[15.5%]'>
-                        <div className='w-[46%] flex-col space-y-4'>
-                            <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider'>Hello I'm</h3>
-                            <h1 className='text-5xl font-medium tracking-wider text-gray-600'>Saurabh Bakolia</h1>
-                            <p className='text-gray-500 font-semibold tracking-wider'>Full stack Web Developer</p>
-
-                            <p className='tracking-normal text-sm text-gray-600'>A Full-Stack developer.Design, develop, and maintain fully-fledged and functioning platforms with databases or servers. </p>
-
-                            <ul className='pt-10 flex w-[260px] justify-between items-center'>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
-                            </ul>
+                    <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons /></div>
+                    <div className='flex pl-10 flex-col justify-around items-start w-[86%] h-[86vh] ml-[15.5%] bg-[#DFF7F8]'>
+                        <h1 className='pt-10  text-3xl text-[#16B0B2] font-semibold tracking-wider'>Skills</h1>
+                        <div className='flex justify-between items-start '>
+                            <div className='w-[16em]'>
+                                <ul className='flex justify-between items-center p-4 rounded-full text-xl  bg-[#16B0B2] text-white hover:shadow-md'>
+                                    <li className='text-2xl'>
+                                        <FaLaptopCode />
+                                    </li>
+                                    <li>
+                                        Programming Skills
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='grid grid-cols-2 justify-items-center items-start gap-10 min-w-[46em] w-[70%] ml-4'>
+                                <SkillsProgress language="React Js" langIcon={<FaReact/>}/>
+                                <SkillsProgress language="Node Js" langIcon={<GrNode/>}/>
+                                <SkillsProgress language="Mongo db" langIcon={<DiMongodb/>}/>
+                                <SkillsProgress language="Python" langIcon={<FaPython/>}/>
+                                <SkillsProgress language="Tailwind Css" langIcon={<SiTailwindcss/>}/>
+                                <SkillsProgress language="Express Js" langIcon={<SiExpress/>}/>
+                                <SkillsProgress language="JavaScript" langIcon={<SiJavascript/>}/>
+                                <SkillsProgress language="PHP" langIcon={<SiPhp/>}/>
+                            </div>
                         </div>
-                        <div className='w-[42%] text-center'>
-                            <img src={Image} alt="code_image" className='w-full h-[200px] rounded-full contains cover-full' />
-                            <h2 className='pt-6 text-2xl text-white font-semibold tracking-widest'>Code Never Lie</h2>
+                        <div className='flex justify-between items-start'>
+                            <div className='w-[16em] justify-between'>
+                                <ul className='flex justify-between items-center p-4 rounded-full text-xl bg-[#16B0B2] text-white font-medium hover:shadow-md'>
+                                    <li className='text-2xl text-white'>
+                                        <GoTools />
+                                    </li>
+                                    <li className='font-medium'>
+                                        Technologies Skills
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='grid grid-cols-2 justify-items-center w-[70%] min-w-[46em] gap-10 ml-4'>
+                                <SkillsProgress language="Git" langIcon={<FaGitAlt/>}/>
+                                <SkillsProgress language="Linux" langIcon={<FaLinux/>}/>
+                                <SkillsProgress language="Ms Office" langIcon={<SiMicrosoftoffice/>}/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
         </>
-  )
+    )
 }
 
 export default SkillsPage
+
+
+
+// #DFF7F8;
