@@ -18,7 +18,7 @@ const SkillsPage = () => {
                 <div className='flex justify-between items-center'>
                     <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex pl-10 flex-col justify-around items-start w-[86%] h-[86vh] ml-[15.5%] bg-[#DFF7F8]'>
-                        <h1 className='pt-10  text-3xl text-[#16B0B2] font-semibold tracking-wider'>Skills</h1>
+                        <h1 className='pt-10  text-3xl text-[#16B0B2] font-medium tracking-wider'>Skills</h1>
                         <div className='flex justify-between items-start '>
                             <div className='w-[16em]'>
                                 <ul className='flex justify-between items-center p-4 rounded-full text-xl  bg-[#16B0B2] text-white hover:shadow-md'>
