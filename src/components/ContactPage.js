@@ -36,7 +36,7 @@ const ContactPage = () => {
                             <li className="cursor-pointer"><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='tracking-widest'>
                         © Scroll<span className='text-[#16B0B2]'>Me</span>.com, All rights reserved.
                     </div>
                 </div>
