@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
-import { Link } from 'react-router-dom'
-import Image from '../assets/code.jpg'
+import { MdCastForEducation } from 'react-icons/md'
+import { FaBusinessTime } from 'react-icons/fa'
+import ExperienceCard from './ExperienceCard'
+import ExperienceProgress from './ExperienceProgress'
 
 const ExperiencePage = () => {
     return (
@@ -10,23 +12,58 @@ const ExperiencePage = () => {
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[13em] h-[89.90vh]'><SocialMediaIcons /></div>
-                    <div className='flex justify-between items-center w-[86%] h-[89.90vh] mr-[15.5%]'>
-                        <div className='w-[46%] flex-col space-y-4'>
-                            <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider'>Hello I'm</h3>
-                            <h1 className='text-5xl font-medium tracking-wider text-gray-600'>Saurabh Bakolia</h1>
-                            <p className='text-gray-500 font-semibold tracking-wider'>Full stack Web Developer</p>
+                    <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons /></div>
+                    <div className='flex flex-col pl-10 pt-6 justify-start items-start w-[86%] h-[89.9vh] ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2]'>
+                        <h1 className='text-3xl text-[#16B0B2] font-medium tracking-wider'>Portfolio</h1>
+                        <div className='text-gray-600 flex justify-between items-center w-full'>
+                            <div className='w-full flex flex-col gap-10 justify-between items-start'>
+                                <ul className='ml-6 flex justify-between items-center text-xl font-semibold'>
+                                    <li className='text-2xl mr-7'>
+                                        <MdCastForEducation />
+                                    </li>
+                                    <li>Education</li>
+                                </ul>
+                                <div className='flex flex-col gap-10'>
+                                    <div className='flex justify-between items-start w-[29em]'>
+                                        <ExperienceProgress />
+                                        <ExperienceCard ExperienceTitle="Master of Science ( Economics )" ExperienceLocation ="Indian Institute of Technology Kharagpur" ExperienceYear="2020 - 2025"/>
+                                    </div>
+                                    <div className='flex justify-between items-start w-[29em]'>
+                                        <ExperienceProgress />
+                                        <ExperienceCard ExperienceTitle="Higher Secondary School" ExperienceLocation ="Rajat Vidhyapeeth Sr Sec.  School ( Sikar )" ExperienceYear="2017 - 2019"/>
+                                    </div>
+                                    <div className='flex justify-between items-start w-[29em]'>
+                                        <ExperienceProgress />
+                                        <ExperienceCard ExperienceTitle="Secondary School" ExperienceLocation ="Govt. Prakash Secondary School ( Ratangarh )" ExperienceYear="2016 - 2017"/>
+                                    </div>
 
-                            <p className='tracking-normal text-sm text-gray-600'>A Full-Stack developer.Design, develop, and maintain fully-fledged and functioning platforms with databases or servers. </p>
+                                </div>
+                            </div>
+                            <div className='w-full flex flex-col gap-10 justify-start items-start h-full'>
+                                <ul className='ml-6 flex justify-between items-center text-xl font-semibold'>
+                                    <li className='text-2xl mr-7'>
+                                        <FaBusinessTime />
+                                    </li>
+                                    <li>Experience</li>
+                                </ul>
+                                <div className=''>
+                                    <div className='flex flex-col justify-start items-start gap-10'>
+                                        <div className='flex justify-between items-start w-[29em]'>
+                                            <ExperienceProgress />
+                                            <ExperienceCard ExperienceTitle="Full-stack Developer" ExperienceLocation ="Leads4 Needs" ExperienceYear="June 22 - July 22"/>
+                                        </div>
+                                        <div className='flex justify-between items-start w-[29em]'>
+                                            <ExperienceProgress />
+                                            <ExperienceCard ExperienceTitle="Front-end Developer" ExperienceLocation ="HJB Hall of Residence ( IIT Kharagpur ) " ExperienceYear="March  05 -  Present"/>
+                                        </div>
+                                        {/* <div className='flex justify-between items-start w-[29em]'>
+                                            <ExperienceProgress />
+                                            <ExperienceCard ExperienceTitle="Secondary School" ExperienceLocation ="Govt. Prakash Secondary School ( Ratangarh )" ExperienceYear="2016 - 2017"/>
+                                        </div> */}
 
-                            <ul className='pt-10 flex w-[260px] justify-between items-center'>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
-                            </ul>
-                        </div>
-                        <div className='w-[42%] text-center'>
-                            <img src={Image} alt="code_image" className='w-full h-[200px] rounded-full contains cover-full' />
-                            <h2 className='pt-6 text-2xl text-white font-semibold tracking-widest'>Code Never Lie</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
             <navbar className="flex justify-around items-center h-[10vh]">
                 <div>
-                    <h1 className="font-extrabold text-2xl text-gray-600 tracking-wider cursor-pointer">SCROLL<span className="text-[#16B0B2]">ME</span></h1>
+                    <h1 className="font-extrabold text-2xl text-gray-600 tracking-wider cursor-pointer">SCROLL<span className="text-gray-600 md:text-[#16B0B2]">ME</span></h1>
                 </div>
                 <div className="w-[38%] text-base text-white font-semibold tracking-wider">
                     <ul className="flex justify-evenly tracking-wide">

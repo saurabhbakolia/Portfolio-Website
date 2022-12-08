@@ -1,38 +1,48 @@
 import React from 'react'
 import Navbar from './Navbar'
-import SocialMediaIcons from './SocialMediaIcons'
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si'
 import { Link } from 'react-router-dom'
-import Image from '../assets/code.jpg'
 
 const ContactPage = () => {
-  return (
-    <>
+    return (
+        <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
-                <div className='flex justify-between items-center'>
-                    <div className='w-[13em] h-[89.90vh]'><SocialMediaIcons/></div>
-                    <div className='flex justify-between items-center w-[86%] h-[89.90vh] mr-[15.5%]'>
-                        <div className='w-[46%] flex-col space-y-4'>
-                            <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider'>Hello I'm</h3>
-                            <h1 className='text-5xl font-medium tracking-wider text-gray-600'>Saurabh Bakolia</h1>
-                            <p className='text-gray-500 font-semibold tracking-wider'>Full stack Web Developer</p>
-
-                            <p className='tracking-normal text-sm text-gray-600'>A Full-Stack developer.Design, develop, and maintain fully-fledged and functioning platforms with databases or servers. </p>
-
-                            <ul className='pt-10 flex w-[260px] justify-between items-center'>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
-                            </ul>
-                        </div>
-                        <div className='w-[42%] text-center'>
-                            <img src={Image} alt="code_image" className='w-full h-[200px] rounded-full contains cover-full' />
-                            <h2 className='pt-6 text-2xl text-white font-semibold tracking-widest'>Code Never Lie</h2>
-                        </div>
+                <div className='flex flex-col justify-center items-center bg-white h-[90vh] w-full gap-10'>
+                    <h1 className='text-2xl font-bold tracking-wider text-gray-600'>SCROLL<span className='text-[#16B0B2]'>ME</span></h1>
+                    <div>
+                        <ul className='flex items-center text-gray-600 text-2xl space-x-6'>
+                            <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaFacebookF /></li>
+                            <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaInstagram /></li>
+                            <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaGithub /></li>
+                            <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><FaLinkedin /></li>
+                            <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white text-xl'><SiGmail /></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className='pt-10 flex w-[280px] justify-between items-center'>
+                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
+                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Download CV</Link></button></li>
+                        </ul>
+                    </div>
+                    <div className="w-[44%] text-base text-gray-600 font-medium tracking-widest">
+                        <ul className="flex justify-evenly tracking-wide">
+                            <li className="cursor-pointer"><Link to='/'>Home</Link></li>
+                            <li className="cursor-pointer"><Link to='/about'>About</Link></li>
+                            <li className="cursor-pointer"><Link to='/skills'>Skills</Link></li>
+                            <li className="cursor-pointer"><Link to='/portfolio'>Portfolio</Link></li>
+                            <li className="cursor-pointer"><Link to='/exp'>Experience</Link></li>
+                            <li className="cursor-pointer"><Link to='/contact'>Contact</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        © Scroll<span className='text-[#16B0B2]'>Me</span>.com, All rights reserved.
                     </div>
                 </div>
             </main>
         </>
-  )
+    )
 }
 
 export default ContactPage
