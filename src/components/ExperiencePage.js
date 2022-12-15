@@ -12,8 +12,8 @@ const ExperiencePage = () => {
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons /></div>
-                    <div className='flex flex-col pl-10 pt-6 justify-start items-start w-[86%] h-[89.9vh] ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2]'>
+                    <div className='w-[15%] h-[89.90vh]'><SocialMediaIcons /></div>
+                    <div className='flex flex-col pl-10 pt-6 justify-start items-start w-[85%] h-[89.9vh] ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2]'>
                         <h1 className='text-3xl text-[#16B0B2] font-medium tracking-wider'>Portfolio</h1>
                         <div className='text-gray-600 flex justify-between items-center w-full'>
                             <div className='w-full flex flex-col gap-10 justify-between items-start'>

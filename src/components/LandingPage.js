@@ -10,8 +10,8 @@ const LandingPage = () => {
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
                 <div className='flex justify-between items-center'>
-                    <div className='w-[15em] h-[89.90vh]'><SocialMediaIcons/></div>
-                    <div className='flex justify-between items-center w-[86%] h-[89.90vh] mr-[15.5%]'>
+                    <div className='w-[15%] h-[89.90vh]'><SocialMediaIcons/></div>
+                    <div className='flex justify-between items-center w-[85%] h-[89.90vh] mr-[15.5%]'>
                         <div className='w-[46%] flex-col space-y-4'>
                             <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider'>Hello I'm</h3>
                             <h1 className='text-5xl font-medium tracking-wider text-gray-600'>Saurabh Bakolia</h1>
