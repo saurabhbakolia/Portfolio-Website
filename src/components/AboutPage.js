@@ -3,34 +3,33 @@ import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
 import { Link } from 'react-router-dom'
 import Image from '../assets/portfolio.jpg'
-
 const AboutPage = () => {
     return (
         <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
-                <div className='flex justify-between items-center'>
-                    <div className='w-[15%] h-[89.90vh]'><SocialMediaIcons /></div>
-                    <div className='flex justify-between items-center w-[85%] h-[64vh] mr-[15.5%] border-2 border-gray-200 bg-white rounded-3xl'>
-                        <div className='w-[68%] text-center about__page__Div h-full '>
-                            {/* <img src={Image} alt="code_image" className='object-cover h-full w-[full]' /> */}
-                            <div className='about__photo__div'></div>
+                <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full'>
+                    <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
+                    <div className='flex flex-col lg:flex-row justify-evenly xl:justify-between items-center w-full h-[90vh] lg:w-[85%] lg:h-[64vh] lg:mr-[15.5%] bg-white rounded-3xl lg:space-x-8 md:space-x-6 xl:space-x-10'>
+                        <div className='w-full lg:w-[50%] lg:h-full text-center about__page__Div flex justify-center items-center'>
+                            <img src={Image} alt="code_image" className='object-cover w-full max-w-[90vw] h-[32vh] lg:h-full rounded-lg' />
+                            {/* <div className='about__photo__div'></div> */}
                         </div>
-                        <div className='w-[40%] flex-col space-y-4 bg-white pr-6'>
-                            <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider font-semibold'>About Me</h3>
-                            <p className='tracking-normal text-sm text-gray-600'>Full stack web developer with background knowledge of MERN stacks, along with a knack of building applications with utmost efficiency.</p>
-                            <h1 className='text-sm tracking-wider font-semibold text-[#16B0B2]'>Few Highlights</h1>
-                            <ul className='text-gray-600 text-sm'>
-                                <li className='list-disc'>Full Stack Web Developer</li>
-                                <li className='list-disc'>Interactive Front End Designer</li>
-                                <li className='list-disc'>Managing Database</li>
-                                <li className='list-disc'>Designing with Figma & Adobe Xd</li>
+                        <div className='pt-2 lg:pt-0 w-[90vw] lg:w-[50%] flex flex-col justify-center items-center space-y-4  lg:space-y-2 xl:space-y-5 bg-white pr-6 text-center'>
+                            <h3 className='text-[#16B0B2] text-2xl md:text-3xl tracking-wider font-semibold'>About Me</h3>
+                            <p className='tracking-normal text-sm md:text-lg text-gray-600 w-[70%] lg:w-full text-center'>Full stack web developer with background knowledge of MERN stacks, along with a knack of building applications with utmost efficiency.</p>
+                            <h1 className='text-sm md:text-lg tracking-wider font-semibold text-[#16B0B2]'>Few Highlights</h1>
+                            <ul className='text-gray-600 text-sm md:text-base grid grid-cols-2 gap-3 text-center place-items-center'>
+                                <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Full Stack Web Developer</li>
+                                <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Interactive Front End Designer</li>
+                                <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Managing Database</li>
+                                <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Designing with Figma & Adobe Xd</li>
                             </ul>
                             
 
-                            <ul className='pt-10 flex w-[260px] justify-between items-center'>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                                <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
+                            <ul className='pt-4 flex justify-around items-center w-full'>
+                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
+                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
                             </ul>
                         </div>
                     </div>
