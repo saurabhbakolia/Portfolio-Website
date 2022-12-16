@@ -13,9 +13,8 @@ const AboutPage = () => {
                     <div className='w-[15%] h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex justify-between items-center w-[85%] h-[64vh] mr-[15.5%] border-2 border-gray-200 bg-white rounded-3xl'>
                         <div className='w-[68%] text-center about__page__Div h-full '>
-                            <img src={Image} alt="code_image" className='object-cover h-full w-[full]' />
+                            {/* <img src={Image} alt="code_image" className='object-cover h-full w-[full]' /> */}
                             <div className='about__photo__div'></div>
-                            <h2 className='pt-6 text-2xl text-white font-semibold tracking-widest'>Code Never Lie</h2>
                         </div>
                         <div className='w-[40%] flex-col space-y-4 bg-white pr-6'>
                             <h3 className='text-[#16B0B2] text-2xl font-medium tracking-wider font-semibold'>About Me</h3>
