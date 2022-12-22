@@ -21,13 +21,13 @@ const ContactPage = () => {
                         </ul>
                     </div>
                     <div>
-                        <ul className='pt-10 flex w-[280px] justify-between items-center'>
-                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Download CV</Link></button></li>
+                        <ul className='pt-10 flex min-w-[280px] justify-between items-center w-full gap-10'>
+                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full md:px-8 md:py-4 md:text-xl w-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
+                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full md:px-8 md:py-4 md:text-xl w-full'><Link to='#' target="_hireMe">Download CV</Link></button></li>
                         </ul>
                     </div>
-                    <div className="w-[44%] text-base text-gray-600 font-medium tracking-widest">
-                        <ul className="flex justify-evenly tracking-wide">
+                    <div className="w-[44%] hidden sm:block lg:text-base text-gray-600 font-medium tracking-widest">
+                        <ul className="flex justify-evenly tracking-wide md:gap-10 sm:gap-4">
                             <li className="cursor-pointer"><Link to='/'>Home</Link></li>
                             <li className="cursor-pointer"><Link to='/about'>About</Link></li>
                             <li className="cursor-pointer"><Link to='/skills'>Skills</Link></li>
