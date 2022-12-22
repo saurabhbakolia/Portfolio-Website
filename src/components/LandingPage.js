@@ -9,7 +9,7 @@ const LandingPage = () => {
         <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
-                <div className='flex justify-between items-center '>
+                <div className='flex justify-between items-center w-full'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='w-[100%] h-[90vh] flex flex-col-reverse justify-evenly items-center lg:flex-row lg:justify-between lg:items-center lg:w-[85%] lg:h-[89.90vh] lg:mr-[15.5%]'>
                         <div className='w-[90%] lg:w-[46%]  flex-col items-center justify-center md:space-y-7 space-y-5 text-center sm:text-center '>

@@ -5,8 +5,8 @@ import Progress from './Progress'
 const SkillsProgress = ({ language, langIcon }) => {
     return (
         <>
-            <div>
-                <ul className='flex justify-between items-center w-[11em] mb-2'>
+            <div className='w-full px-2 max-w-[420px] lg:max-w-[20em]'>
+                <ul className='flex justify-between items-center lg:w-[11em] mb-2'>
                     <li className='text-xl font-medium'>
                         {language}
                     </li>
