@@ -28,8 +28,8 @@ const AboutPage = () => {
                             
 
                             <ul className='pt-4 flex justify-around items-center w-full'>
-                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Hire Me</Link></button></li>
-                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><Link to='#' target="_hireMe">Resume</Link></button></li>
+                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a></button></li>
+                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Resume</a></button></li>
                             </ul>
                         </div>
                     </div>
