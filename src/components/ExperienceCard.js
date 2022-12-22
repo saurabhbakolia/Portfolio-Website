@@ -3,7 +3,7 @@ import { SlCalender } from 'react-icons/sl'
 
 const ExperienceCard = ({ExperienceTitle, ExperienceLocation, ExperienceYear}) => {
     return (
-        <div className='text-gray-600 border-2 border-gray-200  shadow-sm w-[25em] p-4 bg-white rounded-2xl flex flex-col'>
+        <div className='text-gray-600 border-2 border-gray-200  shadow-sm lg:w-[25em] max-w-[460px] w-full p-4 bg-white rounded-2xl flex flex-col'>
             <ul>
                 <li className='font-semibold text-xl tracking-wider'>{ExperienceTitle}</li>
             </ul>
