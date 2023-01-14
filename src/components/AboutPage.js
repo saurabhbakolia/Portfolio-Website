@@ -17,7 +17,7 @@ const AboutPage = () => {
                         </div>
                         <div className='pt-2 lg:pt-0 w-[90vw] lg:w-[50%] flex flex-col justify-center items-center space-y-4  lg:space-y-2 xl:space-y-5 bg-white pr-6 text-center'>
                             <h3 className='text-[#16B0B2] text-2xl md:text-3xl tracking-wider font-semibold'>About Me</h3>
-                            <p className='tracking-normal text-sm md:text-lg text-gray-600 w-[70%] lg:w-full text-center'>Full stack web developer with background knowledge of MERN stacks, along with a knack of building applications with utmost efficiency.</p>
+                            <p className='tracking-normal text-sm md:text-lg text-gray-600 w-[70%] lg:w-full text-center'>Full-stack web developer with experience working with MERN stacks and a propensity for creating applications that are as effective as possible.</p>
                             <h1 className='text-sm md:text-lg tracking-wider font-semibold text-[#16B0B2]'>Few Highlights</h1>
                             <ul className='text-gray-600 text-sm md:text-base grid grid-cols-2 gap-3 text-center place-items-center'>
                                 <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Full Stack Web Developer</li>
