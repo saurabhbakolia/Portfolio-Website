@@ -1,10 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
-import { FaLaptopCode, FaLinux, FaGitAlt } from 'react-icons/fa'
+import { FaLaptopCode } from 'react-icons/fa'
 import { GoTools } from 'react-icons/go'
 import SkillsProgress from './SkillsProgress'
-import { SiMicrosoftoffice } from 'react-icons/si'
 import skills from '../data/skills'
 import technologies from '../data/technologies'
 
