@@ -5,6 +5,8 @@ import { MdCastForEducation } from 'react-icons/md'
 import { FaBusinessTime } from 'react-icons/fa'
 import ExperienceCard from './ExperienceCard'
 import ExperienceProgress from './ExperienceProgress'
+import experience from '../data/experience'
+import education from '../data/education'
 
 const ExperiencePage = () => {
     return (
@@ -24,19 +26,12 @@ const ExperiencePage = () => {
                                     <li>Education</li>
                                 </ul>
                                 <div className='flex flex-col gap-10 h-[500px] overflow-auto lg:h-full w-full lg:pl-6'>
-                                    <div className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                        <ExperienceProgress />
-                                        <ExperienceCard ExperienceTitle="Master of Science ( Economics )" ExperienceLocation ="Indian Institute of Technology Kharagpur" ExperienceYear="2020 - 2025"/>
-                                    </div>
-                                    <div className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                        <ExperienceProgress />
-                                        <ExperienceCard ExperienceTitle="Higher Secondary School" ExperienceLocation ="Rajat Vidhyapeeth Sr Sec.  School ( Sikar )" ExperienceYear="2017 - 2019"/>
-                                    </div>
-                                    <div className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                        <ExperienceProgress />
-                                        <ExperienceCard ExperienceTitle="Secondary School" ExperienceLocation ="Govt. Prakash Secondary School ( Ratangarh )" ExperienceYear="2016 - 2017"/>
-                                    </div>
-
+                                    {education.map(edu => (
+                                        <div key={edu.id} className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
+                                            <ExperienceProgress />
+                                            <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className='w-full flex flex-col gap-10 justify-start items-center md:items-start h-full'>
@@ -48,14 +43,12 @@ const ExperiencePage = () => {
                                 </ul>
                                 <div className='w-full'>
                                     <div className='flex flex-col justify-center w-full lg:justify-start items-start gap-10'>
-                                        <div className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                            <ExperienceProgress />
-                                            <ExperienceCard ExperienceTitle="Full-stack Developer" ExperienceLocation ="Leads4 Needs" ExperienceYear="June 22 - July 22"/>
-                                        </div>
-                                        <div className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                            <ExperienceProgress />
-                                            <ExperienceCard ExperienceTitle="Front-end Developer" ExperienceLocation ="HJB Hall of Residence ( IIT Kharagpur ) " ExperienceYear="March  05 -  Present"/>
-                                        </div>
+                                        {experience.map(exp => (
+                                            <div key={exp.id} className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
+                                                <ExperienceProgress />
+                                                <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
