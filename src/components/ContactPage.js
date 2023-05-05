@@ -9,10 +9,10 @@ const ContactPage = () => {
         <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
-                <div className='flex flex-col justify-center items-center bg-white h-[90vh] w-full gap-10'>
+                <div className='flex flex-col justify-center items-center bg-white h-[90vh] w-full gap-10 px-4'>
                     <h1 className='text-2xl font-bold tracking-wider text-gray-600'>SCROLL<span className='text-[#16B0B2]'>ME</span></h1>
                     <div>
-                        <ul className='flex items-center text-gray-600 text-2xl space-x-6'>
+                        <ul className='flex items-center text-gray-600 text-2xl space-x-4 md:space-x-6'>
                             <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white transition-all duration-500 ease-in-out'><a href="https://www.facebook.com/saurabh.bakolia/" target="_blank" rel='noreferrer'><FaFacebookF/></a></li>
                             <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white'><a href="https://www.instagram.com/__jsoldi_/" target="_blank" rel='noreferrer'><FaInstagram/></a></li>
                             <li className='cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white transition-all duration-500 ease-in-out'><a href="https://github.com/saurabhbakolia" target="_blank" rel='noreferrer'><FaGithub/> </a></li>
