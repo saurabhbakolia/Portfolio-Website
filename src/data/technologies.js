@@ -6,25 +6,25 @@ const technologies = [
         id: 1,
         title: 'Git',
         icon: <FaGitAlt />,
-        progress: 80,
+        progress: 95,
     },
-    // {
-    //     id: 2,
-    //     title: 'GitHub',
-    //     icon: <FaGithub />,
-    //     progress: 80,
-    // },
+    {
+        id: 2,
+        title: 'GitHub',
+        icon: <FaLinux />,
+        progress: 98,
+    },
     {
         id: 3,
         title: 'MS Office',
         icon: <SiMicrosoftoffice />,
-        progress: 80,
+        progress: 65,
     },
     {
         id: 4,
         title: 'Linux',
         icon: <FaLinux />,
-        progress: 80,
+        progress: 45,
     },
 
 

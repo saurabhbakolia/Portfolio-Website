@@ -32,7 +32,7 @@ const SkillsPage = () => {
                             </div>
                             <div className='h-[100%] overflow-auto grid grid-cols-1 sm:grid-cols-2 justify-items-center md:items-start lg:gap-10 min-w-[360px] w-full xl:w-[70%]'>
                                 {skills.map(skill => (
-                                    <SkillsProgress key={skill.id} language={skill.skills} langIcon={skill.icon} />
+                                    <SkillsProgress key={skill.id} language={skill.skills} langIcon={skill.icon} bar={skill.progress}/>
                                 ))}
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const SkillsPage = () => {
                             </div>
                             <div className='h-[100%] lg:h-[100px] xl:h-full overflow-auto grid grid-cols-1 sm:grid-cols-2 justify-items-center w-full min-w-[360px] gap-10 lg:ml-4 xl:w-[70%]'>
                                 {technologies.map(tech => (
-                                    <SkillsProgress language={tech.title} langIcon={tech.icon} />
+                                    <SkillsProgress key={tech.id} language={tech.title} langIcon={tech.icon} bar={tech.progress}/>
                                 ))}
                             </div>
                         </div>

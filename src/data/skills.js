@@ -16,13 +16,13 @@ const skills =  [
         id: 2,
         skills: "Tailwind Css",
         icon: <SiTailwindcss />,
-        progress: 80,
+        progress: 95,
     },
     {
         id: 3,
         skills: "Node Js",
         icon: <GrNode />,
-        progress: 70,
+        progress: 75,
     },
     {
         id: 4,
@@ -34,45 +34,27 @@ const skills =  [
         id: 5,
         skills: "Mongo db",
         icon: <DiMongodb />,
-        progress: 70,
+        progress: 60,
     },
     {
         id: 6,
         skills: "Python",
         icon: <FaPython />,
-        progress: 70,
+        progress: 75,
     },
     {
         id: 7,
         skills: "JavaScript",
 
         icon: <SiJavascript />,
-        progress: 80,
+        progress: 90,
     },
     {
         id: 8,
         skills: "PHP",
         icon: <SiPhp />,
-        progress: 70,
-    },
-    {
-    //     id: 9,
-    //     skills: "Git",
-    //     icon: <FaGitAlt />,
-    //     progress: 80,
-    // },
-    // {
-    //     id: 10,
-    //     skills: "Linux",
-    //     icon: <FaLinux />,
-    //     progress: 70,
-    // },
-    // {
-    //     id: 11,
-    //     skills: "Ms Office",
-    //     icon: <SiMicrosoftoffice />,
-    //     progress: 80,
-    },
+        progress: 85,
+    }
 ]
 
 export default skills;
