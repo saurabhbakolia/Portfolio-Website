@@ -6,9 +6,9 @@ import Image from '../assets/portfolio.jpg'
 const AboutPage = () => {
     return (
         <>
-            <main className="landing_page_bg w-screen h-screen">
+            <main className="landing_page_bg w-screen h-screen flex flex-col gap-6">
                 <Navbar />
-                <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full'>
+                <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full py-6'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:flex-row justify-evenly xl:justify-between items-center w-full h-[90vh] lg:w-[85%] lg:h-[64vh] lg:mr-[15.5%] bg-white rounded-3xl lg:space-x-8 md:space-x-6 xl:space-x-10'>
                         <div className='w-full lg:w-[50%] lg:h-full text-center about__page__Div flex justify-center items-center'>
@@ -25,8 +25,6 @@ const AboutPage = () => {
                                 <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Managing Database</li>
                                 <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Designing with Figma & Adobe Xd</li>
                             </ul>
-                            
-
                             <ul className='pt-4 flex justify-around items-center w-full'>
                                 <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a></button></li>
                                 <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Resume</a></button></li>
