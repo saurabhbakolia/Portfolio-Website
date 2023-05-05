@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
-import { FaLaptopCode, FaReact, FaPython, FaLinux, FaGitAlt } from 'react-icons/fa'
-import { GrNode } from 'react-icons/gr'
+import { FaLaptopCode, FaLinux, FaGitAlt } from 'react-icons/fa'
 import { GoTools } from 'react-icons/go'
 import SkillsProgress from './SkillsProgress'
-import { DiMongodb } from 'react-icons/di'
-import { SiJavascript, SiPhp, SiMicrosoftoffice, SiExpress, SiTailwindcss } from 'react-icons/si'
+import { SiMicrosoftoffice } from 'react-icons/si'
+import skills from '../data/skills'
+import technologies from '../data/technologies'
+
 
 
 
@@ -31,14 +32,9 @@ const SkillsPage = () => {
                                 </ul>
                             </div>
                             <div className='h-[100%] overflow-auto grid grid-cols-1 sm:grid-cols-2 justify-items-center md:items-start lg:gap-10 min-w-[360px] w-full xl:w-[70%]'>
-                                <SkillsProgress language="React Js" langIcon={<FaReact />} />
-                                <SkillsProgress language="Node Js" langIcon={<GrNode />} />
-                                <SkillsProgress language="Mongo db" langIcon={<DiMongodb />} />
-                                <SkillsProgress language="Python" langIcon={<FaPython />} />
-                                <SkillsProgress language="Tailwind Css" langIcon={<SiTailwindcss />} />
-                                <SkillsProgress language="Express Js" langIcon={<SiExpress />} />
-                                <SkillsProgress language="JavaScript" langIcon={<SiJavascript />} />
-                                <SkillsProgress language="PHP" langIcon={<SiPhp />} />
+                                {skills.map(skill => (
+                                    <SkillsProgress key={skill.id} language={skill.skills} langIcon={skill.icon} />
+                                ))}
                             </div>
                         </div>
                         <div className='h-[42%] md:h-[40%] flex flex-col xl:flex-row justify-between items-start gap-3 md:gap-1 w-full'>
@@ -53,9 +49,9 @@ const SkillsPage = () => {
                                 </ul>
                             </div>
                             <div className='h-[100%] lg:h-[100px] xl:h-full overflow-auto grid grid-cols-1 sm:grid-cols-2 justify-items-center w-full min-w-[360px] gap-10 lg:ml-4 xl:w-[70%]'>
-                                <SkillsProgress language="Git" langIcon={<FaGitAlt />} />
-                                <SkillsProgress language="Linux" langIcon={<FaLinux />} />
-                                <SkillsProgress language="Ms Office" langIcon={<SiMicrosoftoffice />} />
+                                {technologies.map(tech => (
+                                    <SkillsProgress language={tech.title} langIcon={tech.icon} />
+                                ))}
                             </div>
                         </div>
                     </div>
