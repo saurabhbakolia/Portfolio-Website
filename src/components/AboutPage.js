@@ -8,7 +8,7 @@ const AboutPage = () => {
         <>
             <main className="landing_page_bg w-screen h-screen flex flex-col gap-6">
                 <Navbar />
-                <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full py-6'>
+                <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full pt-6 pb-10'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:flex-row justify-evenly xl:justify-between items-center w-full h-[90vh] lg:w-[85%] lg:h-[64vh] lg:mr-[15.5%] bg-white rounded-3xl lg:space-x-8 md:space-x-6 xl:space-x-10'>
                         <div className='w-full lg:w-[50%] lg:h-full text-center about__page__Div flex justify-center items-center'>
