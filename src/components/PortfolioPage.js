@@ -10,7 +10,7 @@ const PortfolioPage = () => {
         <>
             <main className="landing_page_bg w-screen h-screen">
                 <Navbar />
-                <div className='flex justify-between items-center px-2'>
+                <div className='flex justify-between items-center px-2 z-0'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex pt-6 flex-col justify-start items-start w-full lg:w-[85%] h-[89.9vh] lg:ml-[15.5%]'>
                         <h1 className='pl-[5%] text-3xl text-[#16B0B2] font-medium tracking-wider'>Portfolio</h1>
