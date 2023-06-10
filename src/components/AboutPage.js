@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
-import { Link } from 'react-router-dom'
 import Image from '../assets/portfolio.jpg'
 const AboutPage = () => {
     return (

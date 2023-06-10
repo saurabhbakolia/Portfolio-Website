@@ -17,6 +17,12 @@ const experience = [
         company: "Hippiees",
         date: "Jan 05 - Feb 10",
     },
+    {
+        id:4,
+        title: "Full-stack Developer",
+        company: "Noccarc Robotics",
+        date: "May 23 - Current"
+    }
 ]
 
 export default experience;

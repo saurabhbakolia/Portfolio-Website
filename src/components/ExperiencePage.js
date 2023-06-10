@@ -17,7 +17,7 @@ const ExperiencePage = () => {
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:pl-10 pt-6 justify-start items-start w-full lg:w-[85%] h-[89.9vh] overflow-auto lg:ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2] px-4 py-6'>
                         <h1 className='text-3xl text-[#16B0B2] font-medium tracking-wider px-[5%] text-center md:text-start w-full'>Experience</h1>
-                        <div className='text-gray-600 flex flex-col md:flex-row m-auto justify-center lg:justify-between items-center w-full md:px-4 md:gap-4 lg:gap-10'>
+                        <div className='text-gray-600 flex flex-col md:flex-row m-auto justify-center lg:justify-between items-start w-full md:px-4 md:gap-4 lg:gap-10'>
                             <div className='w-full flex flex-col gap-10 justify-between items-center md:items-start'>
                                 <ul className='ml-6 flex justify-between items-center text-xl font-semibold'>
                                     <li className='text-2xl mr-7'>
