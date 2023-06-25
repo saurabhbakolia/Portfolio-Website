@@ -23,7 +23,7 @@ const ContactPage = () => {
                     <div>
                         <ul className='pt-10 flex min-w-[280px] justify-between items-center w-full gap-10'>
                             <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full md:px-8 md:py-4 md:text-xl w-full'><a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a></button></li>
-                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full md:px-8 md:py-4 md:text-xl w-full'><a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Download CV</a></button></li>
+                            <li><button className='hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full md:px-8 md:py-4 md:text-xl w-full'><a href='https://drive.google.com/file/d/1Aqoiz_AvFepCHk_LXB9K_9PNCD3XV93p/view?usp=sharing' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Download CV</a></button></li>
                         </ul>
                     </div>
                     <div className="w-[44%] hidden sm:block lg:text-base text-gray-600 font-medium tracking-widest">
