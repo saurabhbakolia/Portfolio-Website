@@ -5,7 +5,7 @@ const projects = [
         description: 'Effortlessly book your trip using our sleek and user-friendly interface, designed with the latest HTML, CSS and JavaScript technologies.',
         image: '/travel.png',
         github: 'https://github.com/saurabhbakolia/Travel-Website.git',
-        live: 'https://determined-clarke-3369b4.netlify.app/',
+        live: 'https://travel.scrollme.online',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const projects = [
         description: 'Indulge in a culinary journey with our restaurant website. Our stunning and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/restaurant.png',
         github: 'https://github.com/saurabhbakolia/Restaurant-Website',
-        live: 'https://classy-cactus-80379a.netlify.app/',
+        live: 'https://restaurant.scrollme.online',
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const projects = [
         description: 'Shop for your favourite products with our e-commerce website. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/ecommerce.png',
         github: 'https://github.com/saurabhbakolia/SCROLLME--ECOMMERCE-WEBSITE.git',
-        live: 'https://scrollme-ecommerce-website.vercel.app/',
+        live: 'https://scrollme.online',
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const projects = [
         description: 'Revolutionize your hiring process with our CV Screener! Our state-of-the-art user interface, designed with the latest HTML, CSS and JavaScript technologies, allows you to quickly and efficiently screen thousands of CVs.',
         image: 'cv_screener.png',
         github: 'https://github.com/saurabhbakolia/CV-Screener.git',
-        live: 'http://cv-screener-tau.vercel.app/',
+        live: 'http://screener.scrollme.online',
     },
     {
         id: 8,

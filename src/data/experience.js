@@ -19,9 +19,15 @@ const experience = [
     },
     {
         id:4,
-        title: "Full-stack Developer",
+        title: "Software Developer",
         company: "Noccarc Robotics",
-        date: "May 23 - Current"
+        date: "May 23 - Aug 31",
+    }, 
+    {
+        id:5,
+        title: "Full-stack Developer",
+        company: "Darzee",
+        date: "Oct 1 - Current",
     }
 ]
 
