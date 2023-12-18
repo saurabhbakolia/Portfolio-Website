@@ -16,7 +16,7 @@ const PortfolioPage = () => {
                         <h1 className='pl-[5%] text-3xl text-[#16B0B2] font-medium tracking-wider'>Portfolio</h1>
                         <div className='bg-gradient-to-r from-white to-[#DFF7F8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 place-items-center lg:justify-between items-center lg:w-[69vw] h-full overflow-auto p-2 lg:p-10'>
                             {projects.map(project => (
-                                <a href={project.live}>
+                                <a href={project.live} target='_blank'>
                                     <div className='drop-shadow-md hover:drop-shadow-lg min-w-[300px] h-fit bg-gradient-to-r from-white to-[#DFF7F8] rounded-md'>
                                         <img src={process.env.PUBLIC_URL + project.image} alt="Project" className='w-[100%] h-[300px] rounded-t-md object-cover' />
                                         <div className='p-3 pt-3'>
@@ -28,7 +28,7 @@ const PortfolioPage = () => {
                                                     <a href={project.github}><TbBrandGithub /></a>
                                                 </li>
                                                 <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
-                                                    <a href={project.live}><FiExternalLink /></a>
+                                                    <a href={project.live} target='_blank'><FiExternalLink /></a>
                                                 </li>
                                             </ul>
                                         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import SocialMediaIcons from './SocialMediaIcons'
 import Image from '../assets/portfolio.jpg'
+import StyledButton from './CustomComponent/StyledButton'
 const AboutPage = () => {
     return (
         <>
@@ -25,8 +26,17 @@ const AboutPage = () => {
                                 <li className='bg-gray-200 rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none'>Designing with Figma & Adobe Xd</li>
                             </ul>
                             <ul className='pt-4 flex justify-around items-center w-full'>
-                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a></button></li>
-                                <li><button className=' md:px-8 md:py-4 md:text-xl hover:shadow-md bg-[#16B0B2] text-white px-6 py-2 rounded-full'><a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Resume</a></button></li>
+                                <li>
+                                    <StyledButton>
+                                        <a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a>
+                                    </StyledButton>
+                                </li>
+                                <li>
+                                    <StyledButton>
+                                        <a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Resume</a>
+                                    </StyledButton>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
