@@ -78,6 +78,14 @@ const projects = [
         image: '/stop-watch.png',
         github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app', 
         live: 'https://quinx.scrollme.online/',
+    }, 
+    {
+        id: 11, 
+        title: 'ScrollMe Library', 
+        description: 'ScrollMe Books: A Dynamic Library Management System', 
+        image: '/library.png',
+        github: 'https://github.com/saurabhbakolia/Llibrary-Repo',
+        live: 'https://library.scrollme.online/',
     }
 ]
 
