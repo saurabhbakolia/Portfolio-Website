@@ -25,7 +25,7 @@ const PortfolioPage = () => {
 
                                             <ul className='flex justify-end text-2xl gap-4 pt-6'>
                                                 <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
-                                                    <a href={project.github}><TbBrandGithub /></a>
+                                                    <a href={project.github} target='_blank'><TbBrandGithub /></a>
                                                 </li>
                                                 <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
                                                     <a href={project.live} target='_blank'><FiExternalLink /></a>

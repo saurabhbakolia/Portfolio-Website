@@ -70,6 +70,14 @@ const projects = [
         image: '/haveyoubeenpwned.png',
         github: 'https://github.com/saurabhbakolia/pwnedPassword.git',
         live: 'https://github.com/saurabhbakolia/pwnedPassword.git',
+    }, 
+    {
+        id: 10,
+        title: 'Scrollme Stop Watch',
+        description: 'Check out the scrollme stop watch, designed to perfection using the React, Tailwind CSS.',
+        image: '/stop-watch.png',
+        github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app', 
+        live: 'https://quinx.scrollme.online/',
     }
 ]
 
