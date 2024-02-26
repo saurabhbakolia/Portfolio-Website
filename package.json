@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "scrollme_portfolio",
+  "description": "This project was developed by SCROLLME Team and is a portfolio website for the company. It is a responsive website that is built using React, Tailwind CSS, and Framer Motion. It is a simple and clean website that showcases the company's portfolio and services. It also has a contact form that allows users to get in touch with the company. The website is fully responsive and works well on all devices. It is a great example of a modern and professional portfolio website.",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

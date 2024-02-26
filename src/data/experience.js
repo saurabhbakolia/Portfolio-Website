@@ -27,7 +27,7 @@ const experience = [
         id:5,
         title: "Full-stack Developer",
         company: "Darzee",
-        date: "Oct 1 - Current",
+        date: "Oct 1 - Feb 7",
     }
 ]
 
