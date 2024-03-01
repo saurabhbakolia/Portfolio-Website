@@ -8,8 +8,8 @@ import StyledButton from './CustomComponent/StyledButton';
 const ContactPage = () => {
     return (
         <>
-            <main className="landing_page_bg w-screen h-screen">
-                <Navbar />
+            <main className="landing_page_bg w-screen h-auto">
+                {/* <Navbar /> */}
                 <div className='flex flex-col justify-center items-center bg-white h-[90vh] w-full gap-10 px-4'>
                     <h1 className='text-2xl font-bold tracking-wider text-gray-600'>SCROLL<span className='text-[#16B0B2]'>ME</span></h1>
                     <div>

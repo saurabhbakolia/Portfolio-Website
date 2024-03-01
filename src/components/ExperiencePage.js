@@ -11,8 +11,8 @@ import education from '../data/education'
 const ExperiencePage = () => {
     return (
         <>
-            <main className="landing_page_bg w-screen h-screen">
-                <Navbar />
+            <main className="landing_page_bg w-screen h-auto">
+                {/* <Navbar /> */}
                 <div className='flex justify-between items-center'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:pl-10 pt-6 justify-start items-start w-full lg:w-[85%] h-[89.9vh] overflow-auto lg:ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2] px-4 py-6'>

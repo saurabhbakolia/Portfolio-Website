@@ -7,8 +7,8 @@ import StyledButton from './CustomComponent/StyledButton';
 
 const LandingPage = () => {
     return (
-        <main className="landing_page_bg w-screen h-screen animate-fade-in animate-slide-in">
-            <Navbar />
+        <main className="landing_page_bg w-screen h-auto animate-fade-in animate-slide-in">
+            {/* <Navbar /> */}
             <div className="flex justify-between items-center w-full">
                 <div className="hidden lg:block lg:w-[15%] lg:h-[89.90vh]">
                     <SocialMediaIcons />
