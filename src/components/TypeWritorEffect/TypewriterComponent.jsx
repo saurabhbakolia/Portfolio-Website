@@ -13,7 +13,7 @@ const TypewriterComponent = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 5000); // Change text every 3 seconds
+        }, 7000); // Change text every 3 seconds
         return () => clearInterval(interval);
     }, []);
 
