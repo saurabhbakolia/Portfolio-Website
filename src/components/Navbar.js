@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import Menu from './Menu/Menu'
 import Burger from './Menu/Burger'
+import Portal from "./PortalComponent/PortalComponent";
 
 const Navbar = () => {
     return (
@@ -12,7 +13,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center relative justify-center">
                     <Menu />
-                    <Burger/>
+                    <Portal>
+                        <Burger />
+                    </Portal>
                 </div>
             </div>
         </div>
