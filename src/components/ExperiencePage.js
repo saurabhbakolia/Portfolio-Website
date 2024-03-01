@@ -7,6 +7,7 @@ import ExperienceCard from './ExperienceCard'
 import ExperienceProgress from './ExperienceProgress'
 import experience from '../data/experience'
 import education from '../data/education'
+import Tilt from 'react-parallax-tilt'
 
 const ExperiencePage = () => {
     return (
@@ -29,7 +30,22 @@ const ExperiencePage = () => {
                                     {education.map(edu => (
                                         <div key={edu.id} className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
                                             <ExperienceProgress />
-                                            <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
+                                            <Tilt
+                                                tiltEnable={true}
+                                                tiltReverse={true}
+                                                tiltMaxAngleX={25}
+                                                tiltMaxAngleY={25}
+                                                scale={1.05}
+                                                transitionSpeed={2500}
+                                                glareEnable={true}
+                                                glareMaxOpacity={0.75}
+                                                glarePosition="bottom"
+                                                glareColor="#ffffff"
+                                                glareBorderRadius="30px"
+                                                perspective={1000}
+                                            >
+                                                <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
+                                            </Tilt>
                                         </div>
                                     ))}
                                 </div>
@@ -46,7 +62,22 @@ const ExperiencePage = () => {
                                         {experience.map(exp => (
                                             <div key={exp.id} className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
                                                 <ExperienceProgress />
-                                                <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
+                                                <Tilt
+                                                    tiltEnable={true}
+                                                    tiltReverse={true}
+                                                    tiltMaxAngleX={25}
+                                                    tiltMaxAngleY={25}
+                                                    scale={1.05}
+                                                    transitionSpeed={2500}
+                                                    glareEnable={true}
+                                                    glareMaxOpacity={0.75}
+                                                    glarePosition="bottom"
+                                                    glareColor="#ffffff"
+                                                    glareBorderRadius="30px"
+                                                    perspective={1000}
+                                                >
+                                                    <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
+                                                </Tilt>
                                             </div>
                                         ))}
                                     </div>

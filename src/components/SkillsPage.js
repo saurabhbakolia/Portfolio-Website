@@ -8,6 +8,7 @@ import skills from '../data/skills';
 import technologies from '../data/technologies';
 import SkillCard from './SkillCard';
 import { motion } from 'framer-motion';
+import Tilt from 'react-parallax-tilt';
 
 
 const container = {
@@ -50,7 +51,22 @@ const SkillsPage = () => {
                                 animate="visible"
                             >
                                 {skills.map((skill) => (
-                                    <SkillCard id={skill.id} skill={skill.skills} icon={skill.icon} />
+                                    <Tilt 
+                                        tiltEnable={true}
+                                        tiltReverse={true}
+                                        tiltMaxAngleX={50}
+                                        tiltMaxAngleY={75}
+                                        scale={1.05}
+                                        transitionSpeed={2500}
+                                        glareEnable={true}
+                                        glareMaxOpacity={0.75}
+                                        glarePosition="bottom"
+                                        glareColor="#ffffff"
+                                        glareBorderRadius="30px"
+                                        perspective={1000}
+                                    >
+                                        <SkillCard id={skill.id} skill={skill.skills} icon={skill.icon} />
+                                    </Tilt>
                                     // <motion.li key={skill.id} className="item" variants={skill}>
                                     // </motion.li>
                                 ))}

@@ -4,6 +4,7 @@ import SocialMediaIcons from './SocialMediaIcons'
 import { FiExternalLink } from 'react-icons/fi'
 import { TbBrandGithub } from 'react-icons/tb'
 import projects from '../data/projects'
+import Tilt from 'react-parallax-tilt'
 
 const PortfolioPage = () => {
     return (
@@ -17,22 +18,37 @@ const PortfolioPage = () => {
                         <div className='bg-gradient-to-r from-white to-[#DFF7F8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 place-items-center lg:justify-between items-center lg:w-[69vw] h-full overflow-auto p-2 lg:p-10'>
                             {projects.map(project => (
                                 <a href={project.live} target='_blank'>
-                                    <div className='drop-shadow-md hover:drop-shadow-lg min-w-[300px] h-fit bg-gradient-to-r from-white to-[#DFF7F8] rounded-md'>
-                                        <img src={process.env.PUBLIC_URL + project.image} alt="Project" className='w-[100%] h-[300px] rounded-t-md object-cover' />
-                                        <div className='p-3 pt-3'>
-                                            <h3 className='text-2xl hover:text-[#16B0B2] transition ease-linear delay-150 font-semibold text-gray-700 pb-3'>{project.title}</h3>
-                                            <p className='text-gray-500'>{project.description}</p>
+                                    <Tilt
+                                        tiltEnable={true}
+                                        tiltReverse={true}
+                                        tiltMaxAngleX={25}
+                                        tiltMaxAngleY={25}
+                                        scale={1.05}
+                                        transitionSpeed={2500}
+                                        glareEnable={true}
+                                        glareMaxOpacity={0.75}
+                                        glarePosition="bottom"
+                                        glareColor="#ffffff"
+                                        glareBorderRadius="30px"
+                                        perspective={1000}
+                                    >
+                                        <div className='drop-shadow-md hover:drop-shadow-lg min-w-[300px] h-fit bg-gradient-to-r from-white to-[#DFF7F8] rounded-md'>
+                                            <img src={process.env.PUBLIC_URL + project.image} alt="Project" className='w-[100%] h-[300px] rounded-t-md object-cover' />
+                                            <div className='p-3 pt-3'>
+                                                <h3 className='text-2xl hover:text-[#16B0B2] transition ease-linear delay-150 font-semibold text-gray-700 pb-3'>{project.title}</h3>
+                                                <p className='text-gray-500'>{project.description}</p>
 
-                                            <ul className='flex justify-end text-2xl gap-4 pt-6'>
-                                                <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
-                                                    <a href={project.github} target='_blank'><TbBrandGithub /></a>
-                                                </li>
-                                                <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
-                                                    <a href={project.live} target='_blank'><FiExternalLink /></a>
-                                                </li>
-                                            </ul>
+                                                <ul className='flex justify-end text-2xl gap-4 pt-6'>
+                                                    <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
+                                                        <a href={project.github} target='_blank'><TbBrandGithub /></a>
+                                                    </li>
+                                                    <li className='hover:text-[#16B0B2] transition ease-in-out delay-150'>
+                                                        <a href={project.live} target='_blank'><FiExternalLink /></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Tilt>
                                 </a>
                             ))}
                         </div>
