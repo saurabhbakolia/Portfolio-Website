@@ -22,6 +22,8 @@ import {
     FaTerminal,
     FaCodeBranch,
     FaServer,
+    FaJava,
+    FaDocker 
 } from 'react-icons/fa';
 import {
     GrNode,
@@ -38,8 +40,13 @@ import {
     SiMicrosoftoffice,
     SiExpress,
     SiTailwindcss,
-    SiJquery
+    SiJquery,
+    SiFlutter,
+    SiTypescript,
+    SiFirebase, 
+    SiSpringboot 
 } from 'react-icons/si';
+import { TbBrandReactNative } from "react-icons/tb";
 
 const skills = [
     {
@@ -110,14 +117,14 @@ const skills = [
     },
     {
         id: 12,
-        skills: "JavaScript",
-        icon: <FaJs size={70} />,
+        skills: "Typescript",
+        icon: <SiTypescript size={70} />,
         progress: 90,
     },
     {
         id: 13,
-        skills: "Node.js",
-        icon: <FaNodeJs size={70} />,
+        skills: "React Native",
+        icon: <TbBrandReactNative size={70} />,
         progress: 75,
     },
     {
@@ -192,6 +199,36 @@ const skills = [
         icon: <FaServer size={70} />,
         progress: 75,
     },
+    {
+        id: 26,
+        skills: "Java",
+        icon: <FaJava size={70} />,
+        progress: 70,
+    },
+    {
+        id: 27,
+        skills: "Flutter",
+        icon: <SiFlutter size={70} />,
+        progress: 60,
+    },
+    {
+        id: 28,
+        skills: "Firebase",
+        icon: <SiFirebase size={70} />,
+        progress: 70,
+    }, 
+    { 
+        id: 29,
+        skills: "Spring Boot", 
+        icon: <SiSpringboot size={70} />,
+        progress: 60,
+    }, 
+    {
+        id: 30,
+        skills: "Docker",
+        icon: <FaDocker size={70} />,
+        progress: 70,
+    }
 ];
 
 export default skills;
