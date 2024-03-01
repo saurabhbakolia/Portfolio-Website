@@ -4,11 +4,23 @@ import SocialMediaIcons from './SocialMediaIcons';
 import { Link } from 'react-router-dom';
 import Image from '../assets/code.jpg';
 import StyledButton from './CustomComponent/StyledButton';
+import Typewriter from "typewriter-effect";
+import TypewriterComponent from './TypeWritorEffect/TypewriterComponent';
+
+const TypewriterEffect = ({ text }) => {
+    const { currentText } = Typewriter({
+        text,
+        loop: true, // Set to true if you want the typewriter effect to loop
+        delay: 100, // Delay between each character in milliseconds
+    });
+
+    return <span>{currentText}</span>;
+};
 
 const LandingPage = () => {
     return (
-        <main className="landing_page_bg w-screen h-screen animate-fade-in animate-slide-in">
-            <Navbar />
+        <main className="landing_page_bg w-screen h-auto animate-fade-in animate-slide-in">
+            {/* <Navbar /> */}
             <div className="flex justify-between items-center w-full">
                 <div className="hidden lg:block lg:w-[15%] lg:h-[89.90vh]">
                     <SocialMediaIcons />
@@ -22,7 +34,8 @@ const LandingPage = () => {
                             Saurabh Bakolia
                         </h1>
                         <p className="text-gray-500 font-semibold tracking-wider md:text-2xl lg:text-xl">
-                            Full Stack Web Developer
+                            {/* Full Stack Web Developer */}
+                            <TypewriterComponent/>  
                         </p>
                         <p className="tracking-normal text-sm md:text-lg text-gray-600">
                             Designing, developing, and maintaining fully-fledged and

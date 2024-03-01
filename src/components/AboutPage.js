@@ -6,8 +6,8 @@ import StyledButton from './CustomComponent/StyledButton'
 const AboutPage = () => {
     return (
         <>
-            <main className="landing_page_bg w-screen h-screen flex flex-col">
-                <Navbar />
+            <main className="landing_page_bg w-screen h-auto flex flex-col">
+                {/* <Navbar /> */}
                 <div className='flex justify-around lg:justify-between xl:justify-center items-center w-full '>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:flex-row justify-evenly xl:justify-between items-center w-full h-fit py-6 lg:w-[85%] lg:h-[64vh] lg:mr-[15.5%] bg-white rounded-3xl lg:space-x-8 md:space-x-6 xl:space-x-10'>

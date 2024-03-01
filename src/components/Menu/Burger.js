@@ -13,7 +13,7 @@ const Burger = () => {
   console.log(transProp);
   return (
     <div className='md:hidden transition-all duration-[20000] z-100 '>
-      <div className='absolute right-0 -top-[10px] z-10 text-gray-600'><Hamburger duration={0.4} easing="ease-in" size={20} toggled={isOpen} toggle={setOpen} /></div>
+      <div className='absolute right-0 top-2 z-10 text-gray-600'><Hamburger duration={0.4} easing="ease-in" size={20} toggled={isOpen} toggle={setOpen} /></div>
       <div className={transProp}>
         <div className="mt-10 text-base text-gray-600 font-semibold tracking-wider">
           <ul className="flex flex-col justify-evenly items-start tracking-wide space-y-4">

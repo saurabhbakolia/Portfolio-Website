@@ -7,12 +7,13 @@ import ExperienceCard from './ExperienceCard'
 import ExperienceProgress from './ExperienceProgress'
 import experience from '../data/experience'
 import education from '../data/education'
+import Tilt from 'react-parallax-tilt'
 
 const ExperiencePage = () => {
     return (
         <>
-            <main className="landing_page_bg w-screen h-screen">
-                <Navbar />
+            <main className="landing_page_bg w-screen h-auto">
+                {/* <Navbar /> */}
                 <div className='flex justify-between items-center'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
                     <div className='flex flex-col lg:pl-10 pt-6 justify-start items-start w-full lg:w-[85%] h-[89.9vh] overflow-auto lg:ml-[15.5%] gap-10 bg-gradient-to-r from-white  to-[#16B0B2] px-4 py-6'>
@@ -29,7 +30,22 @@ const ExperiencePage = () => {
                                     {education.map(edu => (
                                         <div key={edu.id} className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
                                             <ExperienceProgress />
-                                            <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
+                                            <Tilt
+                                                tiltEnable={true}
+                                                tiltReverse={true}
+                                                tiltMaxAngleX={25}
+                                                tiltMaxAngleY={25}
+                                                scale={1.05}
+                                                transitionSpeed={2500}
+                                                glareEnable={true}
+                                                glareMaxOpacity={0.75}
+                                                glarePosition="bottom"
+                                                glareColor="#ffffff"
+                                                glareBorderRadius="30px"
+                                                perspective={1000}
+                                            >
+                                                <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
+                                            </Tilt>
                                         </div>
                                     ))}
                                 </div>
@@ -46,7 +62,22 @@ const ExperiencePage = () => {
                                         {experience.map(exp => (
                                             <div key={exp.id} className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
                                                 <ExperienceProgress />
-                                                <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
+                                                <Tilt
+                                                    tiltEnable={true}
+                                                    tiltReverse={true}
+                                                    tiltMaxAngleX={25}
+                                                    tiltMaxAngleY={25}
+                                                    scale={1.05}
+                                                    transitionSpeed={2500}
+                                                    glareEnable={true}
+                                                    glareMaxOpacity={0.75}
+                                                    glarePosition="bottom"
+                                                    glareColor="#ffffff"
+                                                    glareBorderRadius="30px"
+                                                    perspective={1000}
+                                                >
+                                                    <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
+                                                </Tilt>
                                             </div>
                                         ))}
                                     </div>
