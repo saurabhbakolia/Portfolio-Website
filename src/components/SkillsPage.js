@@ -43,7 +43,8 @@ const SkillsPage = () => {
                     </div>
                     <div className="text-gray-600 flex flex-col justify-start items-center md:items-start w-full h-auto lg:h-[89.90vh] lg:mr-[15.5%] bg-[#DFF7F8] gap-6 md:gap-4 md:p-4">
                         <h1 className="text-3xl text-[#16B0B2] font-medium tracking-wider border-b-4 border-[#16B0B2]">Skills</h1>
-                        <div className="w-full overflow-y-scroll mt-4 py-8">
+                        
+                        <div className="w-full overflow-y-scroll mt-4 py-8 scroll-smooth">
                             <motion.ui
                                 className="w-full grid 2xl:grid-cols-4 md:grid-cols-3 grid-cols-2 place-content-center place-items-center gap-4 lg:grid-cols-2"
                                 variants={container}
