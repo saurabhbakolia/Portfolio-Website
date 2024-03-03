@@ -51,7 +51,7 @@ const ParticleLayout = ({ children }) => {
                     },
                     particles: {
                         color: {
-                            value: "#16B0B2",
+                            value: ["#16B0B2","#4B5563"],
                         },
                         links: {
                             color: "#16B0B2",
