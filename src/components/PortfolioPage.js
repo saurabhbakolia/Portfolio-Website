@@ -21,8 +21,8 @@ const PortfolioPage = () => {
                                     <Tilt
                                         tiltEnable={true}
                                         tiltReverse={true}
-                                        tiltMaxAngleX={25}
-                                        tiltMaxAngleY={25}
+                                        tiltMaxAngleX={10}
+                                        tiltMaxAngleY={15}
                                         scale={1.05}
                                         transitionSpeed={2500}
                                         glareEnable={true}
