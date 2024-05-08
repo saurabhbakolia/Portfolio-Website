@@ -8,6 +8,7 @@ import ExperienceProgress from './ExperienceProgress'
 import experience from '../data/experience'
 import education from '../data/education'
 import Tilt from 'react-parallax-tilt'
+import TimelineComponent from './TimelineComponent/TimelineComponent'
 
 const ExperiencePage = () => {
     return (
@@ -49,6 +50,10 @@ const ExperiencePage = () => {
                                         </div>
                                     ))}
                                 </div>
+
+                                {/* <div>
+                                    <TimelineComponent/>
+                                </div> */}
                             </div>
                             <div className='w-full flex flex-col gap-10 justify-start items-center md:items-start h-full'>
                                 <ul className='ml-6 flex justify-center lg:justify-between items-center text-xl font-semibold '>

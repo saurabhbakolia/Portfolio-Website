@@ -70,22 +70,46 @@ const projects = [
         image: '/haveyoubeenpwned.png',
         github: 'https://github.com/saurabhbakolia/pwnedPassword.git',
         live: 'https://github.com/saurabhbakolia/pwnedPassword.git',
-    }, 
+    },
     {
         id: 10,
         title: 'Scrollme Stop Watch',
         description: 'Check out the scrollme stop watch, designed to perfection using the React, Tailwind CSS.',
         image: '/stop-watch.png',
-        github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app', 
+        github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app',
         live: 'https://quinx.scrollme.online/',
-    }, 
+    },
     {
-        id: 11, 
-        title: 'ScrollMe Library', 
-        description: 'ScrollMe Books: A Dynamic Library Management System', 
+        id: 11,
+        title: 'ScrollMe Library',
+        description: 'ScrollMe Books: A Dynamic Library Management System',
         image: '/library.png',
         github: 'https://github.com/saurabhbakolia/Llibrary-Repo',
         live: 'https://library.scrollme.online/',
+    },
+    {
+        id: 12,
+        title: 'Expense Tracker App',
+        description: 'Track your expenses effortlessly with our Expense Tracker App. Manage your budgets, categorize expenses, and visualize spending patterns to make informed financial decisions. Stay on top of your finances with intuitive features and insightful reports.',
+        image: '/Expense Tracker.png',
+        github: 'https://github.com/saurabhbakolia/scrollme-expense-tracker',
+        live: 'https://scrollme-expense-tracker.vercel.app/'
+    },
+    {
+        id: 13,
+        title: 'Scroll My Media',
+        description: 'Connect, share, and engage with SocialMe, a vibrant social media platform designed for meaningful interactions. Share your moments, explore diverse content, join communities, and build lasting connections with like-minded individuals. Experience a new level of social networking with SocialMe.',
+        image: '/scrollmy_media.png', 
+        github: 'https://github.com/saurabhbakolia/scrollmy-media-app', 
+        live: 'https://scrollmy-media-app.vercel.app/'
+    }, 
+    {
+        id: 14, 
+        title: 'ScrollMe Sales CRM', 
+        description: 'Empower your sales team with ScrollMe Sales CRM, a comprehensive platform for managing assignments, reviewing candidates, and streamlining the recruitment process. Create assignments, assign tasks, and review candidates seamlessly. Shortlist the best talent based on behavioral, communication, and situation handling scales. Access detailed candidate information, including name, profile, email, experience, hobbies, and introduction. Stay organized with assignment links, hours, and deadlines conveniently displayed. Enhance your recruitment efficiency with ScrollMe Sales CRM.', 
+        image: '/sales_crm.png', 
+        github: 'https://github.com/saurabhbakolia/sales_crm',
+        live: 'https://scrollme-sales-ihvccrohr-saurabh-bakolias-projects.vercel.app/'
     }
 ]
 
