@@ -1,0 +1,45 @@
+/* global.css */
+
+.dark-mode-text {
+    @apply text-[#1A8B9D];
+}
+
+.dark-mode-white-text {
+    @apply text-gray-400;
+}
+
+.dark-mode-bg {
+    background-color: #110133;
+}
+
+.dark-mode-card-bg {
+    background-color:#0C134F;
+}
+
+.light-mode-text {
+    @apply text-[#16B0B2];
+}
+
+.light-mode-gray-text {
+    @apply text-gray-600;
+}
+
+.white-text {
+    @apply text-white;
+}
+
+.highlight-box {
+    @apply rounded-lg w-full justify-center h-[60px] py-1 px-2 sm:py-2 sm:px-2 text-center flex items-center list-none;
+}
+
+.skill-card {
+    @apply h-fit md:w-60 px-8 py-4 rounded-xl shadow-md shadow-[#16afb257] flex justify-center items-center gap-4;
+}
+
+.social-media-icon {
+    @apply cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white transition-all duration-500 ease-in-out;
+}
+
+.menu-social-icon {
+    @apply cursor-pointer rounded-full hover:shadow-sm hover:text-white transition-all duration-500 ease-in-out;
+}

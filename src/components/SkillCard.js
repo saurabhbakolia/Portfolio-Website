@@ -1,12 +1,15 @@
-import React from 'react'
+import { useTheme } from '@emotion/react'
+import React, { useContext } from 'react'
+import ThemeContext from '../contexts/ThemeContext'
 
 const SkillCard = (props) => {
+    const { theme } = useContext(ThemeContext);
     return (
-        <div className='bg-[#16afb218] h-fit md:w-60 px-8 py-4 rounded-xl shadow-md shadow-[#16afb257] flex justify-center items-center gap-4' key={props.id} >
+        <div className={`skill-card ${theme === 'dark' ? 'dark-mode-card-bg dark-mode-white-text' : 'bg-[#16afb218]'}`} key={props.id} >
             <div className='w-full h-fit flex justify-center items-center'>
                 {props.icon}
             </div>
-            <p className='text-center mt-2 text-xl text-gray-700 hidden sm:block'>{props.skill}</p>
+            <p className={`text-center mt-2 text-xl  hidden sm:block ${theme === 'dark' ? 'dark-mode-white-text' : 'text-gray-700'}`}>{props.skill}</p>
         </div>
     )
 }

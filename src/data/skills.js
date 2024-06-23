@@ -1,16 +1,9 @@
-
-
 import {
-    FaLaptopCode,
     FaReact,
     FaPython,
-    FaLinux,
-    FaGitAlt,
     FaHtml5,
     FaCss3,
     FaSass,
-    FaJs,
-    FaNodeJs,
     FaNpm,
     FaAws,
     FaGithub,
@@ -29,15 +22,11 @@ import {
     GrNode,
 } from 'react-icons/gr';
 import {
-    GoTools,
-} from 'react-icons/go';
-import {
     DiMongodb,
 } from 'react-icons/di';
 import {
     SiJavascript,
     SiPhp,
-    SiMicrosoftoffice,
     SiExpress,
     SiTailwindcss,
     SiJquery,
