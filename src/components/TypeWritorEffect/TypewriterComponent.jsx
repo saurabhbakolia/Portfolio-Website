@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Typewriter from 'typewriter-effect';
+import ThemeContext from '../../contexts/ThemeContext';
 
 const TypewriterComponent = () => {
+    const {theme} = useContext(ThemeContext);
     const texts = [
         'Full-stack Developer',
         'Front-end Developer',
@@ -18,7 +20,7 @@ const TypewriterComponent = () => {
     }, []);
 
     return (
-        <div>
+        <div className={`${theme === 'dark' ? 'dark-mode-white-text' : 'text-gray-600'}`}>
             <Typewriter
                 options={{
                     strings: [texts[currentTextIndex]],
