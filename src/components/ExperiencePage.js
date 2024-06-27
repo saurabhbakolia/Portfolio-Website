@@ -14,7 +14,7 @@ const ExperiencePage = () => {
     const { theme } = useContext(ThemeContext);
     return (
         <>
-            <main className="landing_page_bg w-screen h-auto">
+            <main className=" h-auto">
                 {/* <Navbar /> */}
                 <div className='flex justify-between items-center'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si'
 import ThemeContext from '../../contexts/ThemeContext';
+import { FaHamburger } from "react-icons/fa";
 
 
 
@@ -13,9 +14,11 @@ const Burger = () => {
   const transProp = isOpen ? `transition-all duration-[20000] ease-out px-6 py-2 flex flex-col justify-around items-start min-w-[260px] max-w-[40vw] h-[100vh] fixed top-0 right-0 ${theme === 'dark' ? 'dark-mode-card-bg' : 'bg-[#16B0B2]'} translate-x-[0%]` : `px-6 py-2 flex flex-col justify-start items-start  w-[60vw] h-[100vh] fixed top-0 right-0 ${theme === 'dark' ? 'dark-mode-bg' : 'bg-[#16B0B2]'} translate-x-[100%] transition-all duration-[30000] ease-out `;
 
   return (
-    <div className='md:hidden transition-all duration-[20000] z-100'>
-      <div className='absolute right-0 top-2 z-10 text-gray-600'>
-        <Hamburger duration={0.4} easing="ease-in" size={20} toggled={isOpen} toggle={setOpen} />
+    <div className='lg:hidden transition-all duration-[20000] z-100'>
+      <div className='absolute right-1 top-[18px] z-10 text-gray-600'>
+        <Hamburger duration={0.4} easing="ease-in" size={20} toggled={isOpen} toggle=
+        {setOpen} />
+        {/* <FaHamburger className="text-lg text-gray-600"/> */}
       </div>
       <div className={transProp}>
         <div className="mt-10 text-base text-gray-600 font-semibold tracking-wider">

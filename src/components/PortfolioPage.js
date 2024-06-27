@@ -10,7 +10,7 @@ const PortfolioPage = () => {
     const { theme } = useContext(ThemeContext);
     return (
         <>
-            <main className="landing_page_bg w-screen h-auto">
+            <main className="">
                 {/* <Navbar /> */}
                 <div className='flex justify-between items-center px-2 z-0'>
                     <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>

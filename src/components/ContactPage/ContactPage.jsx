@@ -21,7 +21,7 @@ const ContactPage = () => {
         await console.log(container);
     }, []);
     return (
-        <main className="landing_page_bg w-screen h-auto">
+        <main className="">
             <div className='flex flex-col justify-center items-center h-[90vh] w-full gap-10 px-4'>
                 <NavLogo/>
                 <ContactUsSocial />

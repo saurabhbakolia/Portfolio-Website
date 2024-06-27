@@ -36,7 +36,7 @@ const item = {
 const SkillsPage = () => {
     const { theme } = useContext(ThemeContext);
     return (
-        <main className="landing_page_bg w-screen h-auto flex flex-col">
+        <main className="flex flex-col">
             {/* <Navbar /> */}
             <div className="flex justify-between items-center w-full h-full">
                 <div className="hidden lg:block lg:w-[15%] lg:h-[89.90vh]">
