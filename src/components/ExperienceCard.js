@@ -15,7 +15,7 @@ const ExperienceCard = ({ exp }) => {
             <ul className='mt-4'>
                 {exp.keyPoints && exp.keyPoints.map((point) => {
                     return (
-                        <li key={point} className='text-xs mt-2 list-disc'>
+                        <li key={point} className='text-xs lg:text-base mt-2 list-disc'>
                             {point}
                         </li>
                     )
