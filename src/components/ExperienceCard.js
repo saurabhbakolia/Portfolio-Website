@@ -2,22 +2,31 @@ import React, { useContext } from 'react'
 import { SlCalender } from 'react-icons/sl'
 import ThemeContext from '../contexts/ThemeContext'
 
-const ExperienceCard = ({ ExperienceTitle, ExperienceLocation, ExperienceYear }) => {
+const ExperienceCard = ({ exp }) => {
     const { theme } = useContext(ThemeContext);
     return (
-        <div className={`border-2 shadow-sm lg:w-[25em] max-w-[460px] w-full p-4 rounded-2xl flex flex-col ${theme === 'dark' ? 'dark-mode-white-text dark-mode-card-bg border-[#110133]' : 'bg-white  border-gray-200 text-gray-600 '}`}>
+        <div className={`experience-card ${theme === 'dark' ? 'dark-mode-white-text dark-mode-card-bg border-[#110133]' : 'border-gray-200 text-gray-600 '}`}>
             <ul>
-                <li className='font-semibold text-xl tracking-wider'>{ExperienceTitle}</li>
+                <li className='font-semibold text-xl tracking-wider'>{exp.title}</li>
             </ul>
             <ul>
-                <li className='text-sm text-gray-400'>{ExperienceLocation}</li>
+                <li className='text-sm text-gray-600'>{exp.company}</li>
+            </ul>
+            <ul className='mt-4'>
+                {exp.keyPoints && exp.keyPoints.map((point) => {
+                    return (
+                        <li key={point} className='text-xs mt-2 list-disc'>
+                            {point}
+                        </li>
+                    )
+                })}
             </ul>
             <ul className={`flex justify-start items-center text-xs mt-3 ${theme === 'dark' ? 'dark-mode-white-text' : 'text-gray-700'}`}>
                 <li className='mr-2'>
                     <SlCalender />
                 </li>
                 <li className=''>
-                    {ExperienceYear}
+                    {exp.date}
                 </li>
             </ul>
         </div>

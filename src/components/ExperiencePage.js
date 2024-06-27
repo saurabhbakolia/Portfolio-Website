@@ -13,81 +13,58 @@ import ThemeContext from '../contexts/ThemeContext'
 const ExperiencePage = () => {
     const { theme } = useContext(ThemeContext);
     return (
-        <>
-            <main className=" h-auto">
-                {/* <Navbar /> */}
-                <div className='flex justify-between items-center'>
-                    <div className='hidden lg:block lg:w-[15%] lg:h-[89.90vh]'><SocialMediaIcons /></div>
-                    <div className={`flex flex-col lg:pl-10 pt-6 justify-start items-start w-full lg:w-[85%] h-[89.9vh] overflow-auto lg:ml-[15.5%] gap-10  px-4 py-6 ${theme === 'dark' ? '' : 'bg-gradient-to-r from-white  to-[#16B0B2]'}`}>
-                        <h1 className={`text-3xl font-medium tracking-wider px-[5%] text-center md:text-start w-full ${theme === 'dark' ? 'dark-mode-text' : 'text-[#16B0B2]'}`}>Experience</h1>
-                        <div className='text-gray-600 flex flex-col md:flex-row m-auto justify-center lg:justify-between items-start w-full md:px-4 md:gap-4 lg:gap-10'>
-                            <div className='w-full flex flex-col gap-10 justify-between items-center md:items-start'>
-                                <ul className={`ml-6 flex justify-between items-center text-xl font-semibold ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
-                                    <li className='text-2xl mr-7'>
-                                        <MdCastForEducation />
-                                    </li>
-                                    <li>Education</li>
-                                </ul>
-                                <div className='flex flex-col gap-10 h-[500px] overflow-auto lg:h-full w-full lg:pl-6'>
-                                    {education.map(edu => (
-                                        <div key={edu.id} className='flex justify-center lg:justify-between items-start w-full lg:w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                            <Tilt
-                                                tiltEnable={true}
-                                                tiltReverse={true}
-                                                tiltMaxAngleX={25}
-                                                tiltMaxAngleY={25}
-                                                scale={1.05}
-                                                transitionSpeed={2500}
-                                                glareEnable={true}
-                                                glareMaxOpacity={0.75}
-                                                glarePosition="bottom"
-                                                glareColor="#ffffff"
-                                                glareBorderRadius="30px"
-                                                perspective={1000}
-                                            >
-                                                <ExperienceCard ExperienceTitle={edu.title} ExperienceLocation={edu.company} ExperienceYear={edu.date} />
-                                            </Tilt>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className='w-full flex flex-col gap-10 justify-start items-center md:items-start h-full'>
-                                <ul className={`ml-6 flex justify-center lg:justify-between items-center text-xl font-semibold ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
-                                    <li className='text-2xl mr-7'>
-                                        <FaBusinessTime />
-                                    </li>
-                                    <li>Experience</li>
-                                </ul>
-                                <div className='w-full'>
-                                    <div className='flex flex-col justify-center w-full lg:justify-start items-start gap-10'>
-                                        {experience.map(exp => (
-                                            <div key={exp.id} className='flex justify-center lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
-                                                <Tilt
-                                                    tiltEnable={true}
-                                                    tiltReverse={true}
-                                                    tiltMaxAngleX={5}
-                                                    tiltMaxAngleY={5}
-                                                    scale={1.05}
-                                                    transitionSpeed={2500}
-                                                    glareEnable={true}
-                                                    glareMaxOpacity={0.5}
-                                                    glarePosition="bottom"
-                                                    glareColor="#ffffff"
-                                                    glareBorderRadius="30px"
-                                                    perspective={1000}
-                                                >
-                                                    <ExperienceCard ExperienceTitle={exp.title} ExperienceLocation={exp.company} ExperienceYear={exp.date} />
-                                                </Tilt>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
+        <main className="flex justify-between items-start">
+            <div className={`experience-page-box ${theme === 'dark' ? '' : 'bg-gradient-to-r from-white  to-[#16B0B2]'}`}>
+                <h1 className={`experience-heading ${theme === 'dark' ? 'dark-mode-text' : 'text-[#16B0B2]'}`}>Experience</h1>
+                <div className='experience-card-container'>
+                    <div className='flex flex-col gap-6 justify-between items-start'>
+                        <ul className={`flex justify-between items-center text-xl font-semibold ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
+                            <li className='text-2xl mr-7'>
+                                <MdCastForEducation />
+                            </li>
+                            <li>Education</li>
+                        </ul>
+                        <div className={`${theme === 'dark' ? 'dark-mode-white-text' : 'light-mode-gray-text'}`}>
+                            <div className=''>
+                                <h3 className='text-base font-medium'>Master of Science ( Economics )</h3>
+                                <p className='text-sm font-normal'>Indian Institute of Technology Kharagpur</p>
+                                <span className='text-xs font-normal'>2020-2025</span>
                             </div>
                         </div>
                     </div>
+                    <div className='flex flex-col gap-10 justify-start items-start w-fit lg:w-1/2 h-full'>
+                        <ul className={`flex justify-center lg:justify-between items-center text-xl font-semibold ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
+                            <li className='text-2xl mr-7'>
+                                <FaBusinessTime />
+                            </li>
+                            <li>Working Experience</li>
+                        </ul>
+                        <div className='flex flex-col items-start justify-start flex-wrap gap-10 h-full w-full'>
+                            {experience.map(exp => (
+                                <div key={exp.id} className='flex justify-start lg:justify-between items-start lg:w-[29em] w-full md:min-w-[340px] md:max-w-[400px] lg:max-w-[480px]'>
+                                    <Tilt
+                                        tiltEnable={true}
+                                        tiltReverse={true}
+                                        tiltMaxAngleX={5}
+                                        tiltMaxAngleY={5}
+                                        scale={1.05}
+                                        transitionSpeed={2500}
+                                        glareEnable={true}
+                                        glareMaxOpacity={0.5}
+                                        glarePosition="bottom"
+                                        glareColor="#ffffff"
+                                        glareBorderRadius="10px"
+                                        perspective={1000}
+                                    >
+                                        <ExperienceCard exp={exp}/>
+                                    </Tilt>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </main>
-        </>
+            </div>
+        </main>
     )
 }
 
