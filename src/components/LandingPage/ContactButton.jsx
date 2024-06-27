@@ -1,5 +1,6 @@
 import React from 'react'
 import StyledButton from '../CustomComponent/StyledButton'
+import { Link } from 'react-router-dom'
 
 const ContactButton = () => {
     return (
@@ -14,9 +15,7 @@ const ContactButton = () => {
                 </li>
                 <li>
                     <StyledButton>
-                        <a href="https://drive.google.com/file/d/1Aqoiz_AvFepCHk_LXB9K_9PNCD3XV93p/view?usp=sharing" download="Saurabh_Bakolia_Resume" target="_blank" rel="noreferrer">
-                            Resume
-                        </a>
+                        <Link to={"/saurabh-bakolia-resume"}>Resume</Link>
                     </StyledButton>
                 </li>
             </ul>

@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from './pages/MainPage';
 import ParticleLayout from './components/ParticleLayout/ParticleLayout';
 import { ThemeProvider } from './contexts/ThemeContext';
+import ResumePage from './components/ResumePage/ResumePage'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/exp" element={<ParticleLayout><ExperiencePage /></ParticleLayout>} />
             <Route path="/contact" element={<ContactPage />} />
           </Route>
+          <Route path="/saurabh-bakolia-resume" element={<ResumePage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
