@@ -7,9 +7,9 @@ import { MdOutlineLightMode } from "react-icons/md";
 const Menu = ({ isOpen, setOpen }) => {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <div className='hidden md:flex justify-between items-center'>
-            <div className="md:block text-base text-gray-600 font-semibold tracking-wider">
-                <ul className={`flex justify-evenly items-center tracking-wide space-x-4 ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
+        <div className='navbar-menu'>
+            <div className="hidden lg:block text-base text-gray-600 font-semibold tracking-wider">
+                <ul className={`text-sm flex justify-evenly items-center tracking-wide space-x-4 ${theme === 'dark' ? 'dark-mode-white-text' : ''}`}>
                     <li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out"><Link to='/'>Home</Link></li>
                     <li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out"><Link to='/about'>About</Link></li>
                     <li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out"><Link to='/skills'>Skills</Link></li>
@@ -20,12 +20,12 @@ const Menu = ({ isOpen, setOpen }) => {
             </div>
             <div
                 onClick={toggleTheme}
-                className="ml-4 p-2 rounded cursor-pointer flex items-center"
+                className="ml-4 mr-6 lg:mr-0 rounded cursor-pointer flex items-center"
             >
                 {theme === 'dark' ? (
                     <MdOutlineLightMode className="dark-mode-white-text" size={32} />
                 ) : (
-                    <MdOutlineDarkMode className="text-gray-800" size={32} />
+                    <MdOutlineDarkMode className="text-gray-600" size={32} />
                 )}
             </div>
         </div>

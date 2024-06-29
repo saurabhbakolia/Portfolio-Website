@@ -15,7 +15,7 @@ const ParticleLayout = ({ children }) => {
     };
 
     return (
-        <main className="landing_page_bg w-screen h-auto relative">
+        <main className="relative">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
