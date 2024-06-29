@@ -13,7 +13,7 @@ const MainPage = () => {
         <main className={`w-screen h-screen flex flex-col ${theme === 'dark' ? 'dark-mode-bg' : ''}`}>
             <Navbar />
             <div className='outlet-container'>
-                <div className={`outlet-social-icons ${path === 'contact' ? 'hidden' : 'block'}`}>
+                <div className={`outlet-social-icons ${path === 'contact' ? 'hidden' : ''}`}>
                     <SocialMediaIcons />
                 </div>
                 <div className="outlet">
