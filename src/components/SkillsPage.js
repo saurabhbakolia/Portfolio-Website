@@ -50,8 +50,8 @@ const SkillsPage = () => {
                             <Tilt
                                 tiltEnable={true}
                                 tiltReverse={true}
-                                tiltMaxAngleX={50}
-                                tiltMaxAngleY={75}
+                                tiltMaxAngleX={15}
+                                tiltMaxAngleY={15}
                                 scale={1.05}
                                 transitionSpeed={2500}
                                 glareEnable={true}

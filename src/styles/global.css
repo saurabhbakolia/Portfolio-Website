@@ -44,7 +44,7 @@
 }
 
 .skill-card {
-    @apply h-fit w-36 sm:w-40 lg:w-60 px-8 py-4 rounded-xl shadow-md shadow-[#16afb257] flex flex-wrap justify-center items-center gap-4;
+    @apply h-fit w-36 sm:w-40 lg:w-60 px-8 py-4 rounded-xl shadow-md flex flex-wrap justify-center items-center gap-4;
 }
 
 .portfolio-page-box {
@@ -127,7 +127,7 @@
 
 
 .social-media-icon {
-    @apply cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white transition-all duration-500 ease-in-out;
+    @apply cursor-pointer border-2 border-gray-100 p-3 rounded-full hover:shadow-sm hover:bg-[#16B0B2] hover:text-white transition-all duration-500 ease-in-out shadow-[0_0_10px_gray];
 }
 
 .menu-social-icon {
