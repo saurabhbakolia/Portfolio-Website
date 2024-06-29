@@ -7,16 +7,18 @@ const ContactButton = () => {
         <div>
             <ul className="pt-2 lg:pt-10 flex sm:w-full justify-around sm:justify-evenly items-center">
                 <li>
-                    <StyledButton>
-                        <a href="mailto:saurabhbakolia2002@gmail.com" target="_blank" rel="noreferrer">
+                    <a href="mailto:saurabhbakolia2002@gmail.com" target="_blank" rel="noreferrer">
+                        <StyledButton>
                             Hire Me
-                        </a>
-                    </StyledButton>
+                        </StyledButton>
+                    </a>
                 </li>
                 <li>
-                    <StyledButton>
-                        <Link to={"/saurabh-bakolia-resume"}>Resume</Link>
-                    </StyledButton>
+                    <Link to={"/saurabh-bakolia-resume"}>
+                        <StyledButton>
+                            Resume
+                        </StyledButton>
+                    </Link>
                 </li>
             </ul>
         </div>
