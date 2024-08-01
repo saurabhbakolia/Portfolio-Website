@@ -35,6 +35,18 @@ const ResumePage = () => {
                 <section className='mt-4'>
                     <h3 className='text-xl lg:text-2xl font-medium mt-6'>Working Experience | Internships</h3>
                     <hr className='border border-gray-400' />
+                    {/* SyncMoF Experience */}
+                    <div className='mt-2'>
+                        <ul className='text-sm lg:text-lg font-light flex flex-row justify-between items-center'>
+                            <li className='font-medium'>SyncMOF | <span>Software Engineer</span></li>
+                            <li className='text-xs lg:text-sm italic'>May'24 - July'24</li>
+                        </ul>
+                        <ul className='text-xs lg:text-base font-light flex flex-col justify-between items-start pl-1 mt-1'>
+                            <li className=''>- Engineered a robust front-end for the Black Box project using <strong className='font-medium'>React.js</strong> and <strong className='font-medium'>Tailwind CSS</strong>, delivering a highly scalable and maintainable UI.</li>
+                            <li className=''>- Architected detailed wire-frames and crafted intuitive UI/UX designs for an experimental platform with <strong className='font-medium'>Figma</strong>, significantly improving user interaction and engagement.</li>
+                            <li className=''>- Developed and integrated interactive optimization flows with <strong className='font-medium'>React Flow</strong> , enhancing user experience and streamlining process efficiency.</li>
+                        </ul>
+                    </div>
                     {/* Darzee Experience */}
                     <div className='mt-2'>
                         <ul className='text-sm lg:text-lg font-light flex flex-row justify-between items-center'>
@@ -130,6 +142,7 @@ const ResumePage = () => {
                             <li>SASS |</li>
                             <li>JavaScript |</li>
                             <li>React.JS |</li>
+                            <li>React Flow |</li>
                             <li>Redux |</li>
                             <li>Next.JS |</li>
                             <li>Tailwind CSS |</li>
@@ -165,7 +178,8 @@ const ResumePage = () => {
                             <li>Docker |</li>
                             <li>Visual Studio Code |</li>
                             <li>Postman |</li>
-                            <li>AWS</li>
+                            <li>AWS |</li>
+                            <li>FIGMA</li>
                         </ul>
                     </div>
                 </section>
