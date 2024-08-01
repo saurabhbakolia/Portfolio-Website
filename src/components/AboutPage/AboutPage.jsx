@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import SocialMediaIcons from '../SocialMediaIcons'
 import Image from '../../assets/portfolio.jpg'
 import StyledButton from '../CustomComponent/StyledButton'
 import ThemeContext from '../../contexts/ThemeContext'
@@ -23,14 +22,18 @@ const AboutPage = () => {
                 </ul>
                 <ul className='pt-4 hidden lg:flex justify-around items-center w-full'>
                     <li>
-                        <StyledButton>
-                            <a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>Hire Me</a>
-                        </StyledButton>
+                        <a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>
+                            <StyledButton>
+                                Hire Me
+                            </StyledButton>
+                        </a>
                     </li>
                     <li>
-                        <StyledButton>
-                            <a href='https://drive.google.com/file/d/1ZEIU_2nghJaAEAoIHDq1SkN7Q6GBV-dy/view?usp=share_link' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>Resume</a>
-                        </StyledButton>
+                        <a href='https://drive.google.com/file/d/185jldriKnJJMuoI9JDQtl3i-f5HV2lVB/view?usp=sharing' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>
+                            <StyledButton>
+                                Resume
+                            </StyledButton>
+                        </a>
                     </li>
                 </ul>
             </div>
