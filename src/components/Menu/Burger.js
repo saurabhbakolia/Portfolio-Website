@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si'
 import ThemeContext from '../../contexts/ThemeContext';
-import { FaHamburger } from "react-icons/fa";
 
 
 

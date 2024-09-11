@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
-import StyledButton from '../CustomComponent/StyledButton';
+import React from 'react'
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import ThemeContext from "../../contexts/ThemeContext"
 import ContactUsSocial from './ContactUsSocial';
 import NavLinks from './NavLinks';
 import Copyright from './Copyright';
@@ -11,7 +9,6 @@ import ContactButtons from './ContactButtons';
 import NavLogo from '../Navbar/NavLogo';
 
 const ContactPage = () => {
-    const { theme } = useContext(ThemeContext);
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         await loadSlim(engine);
@@ -23,11 +20,11 @@ const ContactPage = () => {
     return (
         <main className="w-screen m-auto">
             <div className='contact-page-box'>
-                <NavLogo/>
+                <NavLogo />
                 <ContactUsSocial />
-                <ContactButtons/>
-                <NavLinks/>
-                <Copyright/>
+                <ContactButtons />
+                <NavLinks />
+                <Copyright />
             </div>
             <Particles
                 id="tsparticles"

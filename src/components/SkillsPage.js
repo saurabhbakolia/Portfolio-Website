@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useState } from "react";
 import skills from "../data/skills";
 import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";

@@ -13,7 +13,7 @@ const ExperienceCard = ({ exp }) => {
                 <li className='text-sm text-gray-600'>{exp.company}</li>
             </ul>
             <ul className='mt-4'>
-                {exp.keyPoints && exp.keyPoints.map((point) => {
+                {exp.keyPoints?.map((point) => {
                     return (
                         <li key={point} className='text-xs lg:text-base mt-2 list-disc'>
                             {point}

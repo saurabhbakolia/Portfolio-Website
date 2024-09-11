@@ -1,21 +1,9 @@
 import React, { useContext } from 'react';
-import SocialMediaIcons from '../SocialMediaIcons';
 import Image from '../../assets/code.jpg';
-import StyledButton from '../CustomComponent/StyledButton';
-import Typewriter from "typewriter-effect";
 import TypewriterComponent from '../TypeWritorEffect/TypewriterComponent';
 import ThemeContext from '../../contexts/ThemeContext';
 import ContactButton from './ContactButton';
 
-const TypewriterEffect = ({ text }) => {
-    const { currentText } = Typewriter({
-        text,
-        loop: true, // Set to true if you want the typewriter effect to loop
-        delay: 100, // Delay between each character in milliseconds
-    });
-
-    return <span>{currentText}</span>;
-};
 
 const LandingPage = () => {
     const { theme } = useContext(ThemeContext);
@@ -26,7 +14,7 @@ const LandingPage = () => {
                     <h3 className="text-[#16B0B2] text-base font-medium tracking-wider">
                         Hello, I'm
                     </h3>
-                    <h1 className={`text-3xl lg:text-4xl font-medium tracking-wider`}>
+                    <h1 className="text-3xl lg:text-4xl font-medium tracking-wider">
                         Saurabh Bakolia
                     </h1>
                     <p className="text-gray-500 font-semibold tracking-wider md:text-2xl lg:text-xl">

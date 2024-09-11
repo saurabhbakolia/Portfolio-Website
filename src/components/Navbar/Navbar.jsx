@@ -1,17 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Menu from '../Menu/Menu'
 import Burger from '../Menu/Burger'
 import Portal from "../PortalComponent/PortalComponent";
-import { Link } from "react-router-dom";
 import ThemeContext from "../../contexts/ThemeContext";
 import NavLogo from "./NavLogo";
 
 
 const Navbar = () => {
     const { theme } = useContext(ThemeContext);
-    useEffect(() => {
-        console.log(theme)
-    }, []);
     return (
         <nav className={`navbar-container ${theme === 'dark' ? 'dark-mode-bg' : ''}`}>
             <div className="navbar-content-box">

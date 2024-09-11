@@ -1,7 +1,6 @@
 // Layout.js
 
 import React from 'react';
-import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -21,11 +20,6 @@ const ParticleLayout = ({ children }) => {
                 init={particlesInit}
                 loaded={particlesLoaded}
                 options={{
-                    // background: {
-                    //     color: {
-                    //         value: "#0d47a1",
-                    //     },
-                    // },
                     fpsLimit: 120,
                     interactivity: {
                         events: {
@@ -51,7 +45,7 @@ const ParticleLayout = ({ children }) => {
                     },
                     particles: {
                         color: {
-                            value: ["#16B0B2","#4B5563"],
+                            value: ["#16B0B2", "#4B5563"],
                         },
                         links: {
                             color: "#16B0B2",

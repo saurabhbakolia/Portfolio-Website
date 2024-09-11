@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si'
 
 const ContactUsSocial = () => {

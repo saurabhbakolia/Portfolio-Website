@@ -10,7 +10,7 @@ const ResumePage = () => {
     return (
         <div className={`${theme === 'dark' ? 'dark-mode-bg text-gray-200' : 'bg-blue-50'}`}>
             <Navbar />
-            <main className={`w-[90%] m-auto mt-10 p-2 lg:p-4`}>
+            <main className="w-[90%] m-auto mt-10 p-2 lg:p-4">
                 <header className='flex flex-col gap-2 justify-center items-center mt-6'>
                     <h2 className='text-2xl font-medium lg:text-4xl'>Saurabh Bakolia</h2>
                     <ul className='flex flex-row gap-2 text-xl lg:text-2xl'>
