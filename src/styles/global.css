@@ -133,3 +133,15 @@
 .menu-social-icon {
     @apply cursor-pointer rounded-full hover:shadow-sm hover:text-white transition-all duration-500 ease-in-out;
 }
+
+/* Styles for SkillCard dragging effect */
+.skill-card.dragging {
+    z-index: 9999; /* Make sure the dragged item is on top */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4); /* Prominent drop shadow */
+    transform: scale(1.05); /* Slightly enlarge the dragged item */
+}
+
+/* Optional: Transition effects for the skill card */
+.skill-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
