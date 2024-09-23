@@ -1,5 +1,6 @@
 import React from "react";
 import StyledButton from "../CustomComponent/StyledButton";
+import resumePDF from "../../assets/resume.pdf";
 
 const ContactButtons = () => {
 	return (
@@ -19,7 +20,7 @@ const ContactButtons = () => {
 				<li>
 					<StyledButton>
 						<a
-							href="https://drive.google.com/file/d/1Aqoiz_AvFepCHk_LXB9K_9PNCD3XV93p/view?usp=sharing"
+							href={resumePDF}
 							download="Saurabh_Bakolia_Resume"
 							target="_blank"
 							rel="noreferrer"
