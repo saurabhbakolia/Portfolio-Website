@@ -1,44 +1,39 @@
-import React, { useContext } from 'react'
-import Image from '../../assets/portfolio.jpg'
-import StyledButton from '../CustomComponent/StyledButton'
-import ThemeContext from '../../contexts/ThemeContext'
-const AboutPage = () => {
-    const { theme } = useContext(ThemeContext);
-    return (
-        <main className='about-page-content'>
-            <div className='w-full lg:w-[50%] lg:h-full text-center about__page__Div flex justify-center items-center'>
-                <img src={Image} alt="code_image" className='object-cover w-full max-w-[90vw] h-[32vh] lg:h-full rounded-lg' />
-                {/* <div className='about__photo__div'></div> */}
-            </div>
-            <div className='pt-2 lg:pt-0 w-[90vw] lg:w-[50%] flex flex-col justify-center items-center space-y-4 lg:space-y-2 xl:space-y-5 text-center'>
-                <h3 className={`text-2xl md:text-3xl tracking-wider font-semibold ${theme === 'dark' ? 'dark-mode-text' : 'text-[#16B0B2]'}`}>About Me</h3>
-                <p className={`tracking-normal text-sm md:text-lg w-[70%] lg:w-full text-center ${theme === 'dark' ? 'dark-mode-white-text' : 'light-mode-gray-text'}`}>Versatile Full-Stack Web Developer with a flair for crafting high-impact applications using the MERN stack, dedicated to delivering optimal digital solutions.</p>
-                <h1 className='text-sm md:text-lg tracking-wider font-semibold text-[#16B0B2]'>Few Highlights</h1>
-                <ul className={`text-sm md:text-base grid grid-cols-2 gap-3 text-center place-items-center ${theme === 'dark' ? 'dark-mode-white-text' : 'light-mode-gray-text'}`}>
-                    <li className={`highlight-box ${theme === 'dark' ? 'dark-mode-card-bg' : 'bg-gray-200'}`}>Expert in MERN Stack Development</li>
-                    <li className={`highlight-box ${theme === 'dark' ? 'bg-[#0C134F]' : 'bg-gray-200 '}`}>Passionate Front-End Innovator</li>
-                    <li className={`highlight-box ${theme === 'dark' ? 'bg-[#0C134F]' : 'bg-gray-200 '}`}>Database Management Maestro</li>
-                    <li className={`highlight-box ${theme === 'dark' ? 'bg-[#0C134F]' : 'bg-gray-200 '}`}>Innovative Design Thinker</li>
-                </ul>
-                <ul className='pt-4 hidden lg:flex justify-around items-center w-full'>
-                    <li>
-                        <a href="mailto:saurabhbakolia2002@gmail" target="_blank" rel='noreferrer'>
-                            <StyledButton>
-                                Hire Me
-                            </StyledButton>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='https://drive.google.com/file/d/185jldriKnJJMuoI9JDQtl3i-f5HV2lVB/view?usp=sharing' download="Saurabh_Bakolia_Resume" target="_blank" rel='noreferrer'>
-                            <StyledButton>
-                                Resume
-                            </StyledButton>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </main>
-    )
-}
+import React, { useContext } from "react";
+import ThemeContext from "../../contexts/ThemeContext";
 
-export default AboutPage
+const AboutPage = () => {
+	const { theme } = useContext(ThemeContext);
+
+	return (
+		<section
+			className={`min-h-screen flex flex-col justify-center items-center ${
+				theme === "dark"
+					? "bg-gradient-to-r from-gray-900 to-gray-800 text-white"
+					: "bg-gradient-to-r from-gray-200 to-white text-gray-900"
+			} transition-all duration-300 p-6`}
+		>
+			<h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#16B0B2] to-[#ff007f] drop-shadow-lg animate-pulse">
+				About Me
+			</h2>
+			<p className="text-md md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-6 transition-transform duration-300 hover:scale-105">
+				I'm a passionate full stack developer with a strong foundation in both front-end and back-end technologies. My journey began with a fascination for coding and has evolved into a dedication to creating scalable and efficient web applications.
+			</p>
+			<p className="text-md md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-6 transition-transform duration-300 hover:scale-105">
+				Throughout my career, I have worked on various projects that have honed my skills in software development, problem-solving, and team collaboration. I thrive in dynamic environments where I can learn and adapt while contributing to meaningful projects.
+			</p>
+			<p className="text-md md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed transition-transform duration-300 hover:scale-105">
+				When I'm not coding, you can find me exploring new technologies, participating in hackathons, or sharing knowledge with fellow developers. I'm excited about the future of tech and look forward to continuing to make an impact in the industry.
+			</p>
+			<div className="mt-8">
+				<a
+					href="#contact"
+					className="px-8 py-3 bg-[#16B0B2] text-white font-semibold rounded-full shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105"
+				>
+					Let's Connect!
+				</a>
+			</div>
+		</section>
+	);
+};
+
+export default AboutPage;

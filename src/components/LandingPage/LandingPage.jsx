@@ -1,40 +1,54 @@
-import React, { useContext } from 'react';
-import Image from '../../assets/code.jpg';
-import TypewriterComponent from '../TypeWritorEffect/TypewriterComponent';
-import ThemeContext from '../../contexts/ThemeContext';
-import ContactButton from './ContactButton';
-
+import React, { useContext } from "react";
+import ThemeContext from "../../contexts/ThemeContext";
+import { Link } from "react-scroll";
 
 const LandingPage = () => {
-    const { theme } = useContext(ThemeContext);
-    return (
-        <main className="landing-page-container animate-fade-in animate-slide-in">
-            <div className="landing-page-content-box">
-                <div className={`introduction-section ${theme === 'dark' ? 'dark-mode-white-text' : 'text-gray-600'}`}>
-                    <h3 className="text-[#16B0B2] text-base font-medium tracking-wider">
-                        Hello, I'm
-                    </h3>
-                    <h1 className="text-3xl lg:text-4xl font-medium tracking-wider">
-                        Saurabh Bakolia
-                    </h1>
-                    <p className="text-gray-500 font-semibold tracking-wider md:text-2xl lg:text-xl">
-                        <TypewriterComponent />
-                    </p>
-                    <p className="tracking-normal text-sm md:text-base px-2 md:w-[76%] lg:w-full m-auto overflow-hidden">
-                        Designing, developing, and maintaining fully-fledged and
-                        functioning platforms with databases or servers.
-                    </p>
-                    <ContactButton />
-                </div>
-                <div className="w-[90%] lg:w-[42%] md:max-w-[600px] text-center">
-                    <img src={Image} alt="code_image" className="w-full h-[200px] md:h-[24vh] lg:h-[30vh] rounded-full object-cover" />
-                    <h2 className={`pt-6 text-2xl lg:text-3xl font-semibold tracking-widest ${theme === 'dark' ? 'dark-mode-white-text' : 'text-gray-600'}`}>
-                        Code Never Lies
-                    </h2>
-                </div>
-            </div>
-        </main>
-    );
+	const { theme } = useContext(ThemeContext);
+
+	return (
+		<section
+			className={`min-h-screen flex flex-col justify-center items-center ${
+				theme === "dark"
+					? "bg-gray-900 text-gray-100"
+					: "bg-gray-100 text-gray-900"
+			} transition-all duration-300 p-6`}
+			id="#"
+		>
+			{/* Name and Title with Subtle Animation */}
+			<div className="text-center mb-8 animate-fadeInUp">
+				<h1 className="text-5xl md:text-6xl font-bold tracking-wide transition-colors duration-300">
+					<span className="bg-gradient-to-r from-teal-400 to-portfolio_color bg-clip-text text-transparent">
+						Saurabh Bakolia
+					</span>
+				</h1>
+				<p className="text-lg md:text-xl font-light mt-4 tracking-wider opacity-80">
+					Full Stack Developer | Tech Enthusiast
+				</p>
+			</div>
+
+			{/* Short Introduction with Spacing */}
+			<div className="text-center mb-10 max-w-2xl mx-auto opacity-90 animate-fadeInUp delay-200">
+				<p className="text-md md:text-lg leading-relaxed">
+					Crafting scalable web applications with modern technologies to solve
+					real-world problems. Passionate about delivering top-quality
+					full-stack solutions.
+				</p>
+			</div>
+
+			{/* Call to Action */}
+			<div className="text-center animate-fadeInUp delay-400">
+				<Link
+					to={"portfolio"}
+					smooth={true}
+					duration={500}
+					offset={-80}
+					className="px-8 py-3 border-2 border-teal-500 text-teal-500 font-medium rounded-full shadow-md hover:bg-teal-500 hover:text-white transition-all duration-300 cursor-pointer"
+				>
+					View My Work
+				</Link>
+			</div>
+		</section>
+	);
 };
 
 export default LandingPage;
