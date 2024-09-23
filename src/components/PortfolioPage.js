@@ -7,76 +7,104 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const PortfolioPage = () => {
 	const { theme } = useContext(ThemeContext);
-	return (
-		<main className="flex justify-between items-center px-2 z-0 lg:mr-16">
-			<div className="w-full flex pt-6 flex-col justify-end items-start h-[89.9vh]">
-				<h1 className="pl-[5%] text-3xl text-[#16B0B2] font-medium tracking-wider">
-					Portfolio
-				</h1>
-				<div
-					className={`portfolio-page-box ${theme === "dark" ? "" : "bg-gradient-to-r from-white to-[#DFF7F8]"}`}
-				>
-					{projects.map((project) => (
-						<a
-							href={project.live}
-							rel="noreferrer"
-							target="_blank"
-							key={project.id}
-						>
-							<Tilt
-								tiltEnable={true}
-								tiltReverse={true}
-								tiltMaxAngleX={5}
-								tiltMaxAngleY={5}
-								scale={1.05}
-								transitionSpeed={2500}
-								glareEnable={true}
-								glareMaxOpacity={0.5}
-								glarePosition="bottom"
-								glareColor="#ffffff"
-								glareBorderRadius="30px"
-								perspective={1000}
-							>
-								<div
-									className={`drop-shadow-md hover:drop-shadow-lg min-w-[300px] h-fit rounded-md ${theme === "dark" ? "bg-gradient-to-r from-[#110133] to-[#0C134F]" : "bg-gradient-to-r from-white to-[#DFF7F8]"}`}
-								>
-									<img
-										src={process.env.PUBLIC_URL + project.image}
-										alt="Project"
-										className="w-[100%] h-[300px] rounded-t-md object-cover"
-									/>
-									<div className="p-3 pt-3">
-										<h3
-											className={`text-2xl hover:text-[#16B0B2] transition ease-linear delay-150 font-semibold ${theme === "dark" ? "dark-mode-white-text" : "text-gray-700"} pb-3`}
-										>
-											{project.title}
-										</h3>
-										<p
-											className={`${theme === "dark" ? "dark-mode-white-text" : "text-gray-500"}`}
-										>
-											{project.description}
-										</p>
 
-										<ul
-											className={`flex justify-end text-2xl gap-4 pt-6 ${theme === "dark" ? "dark-mode-white-text" : ""}`}
+	return (
+		<main
+			className={`flex flex-col items-center justify-between px-4 lg:px-16 py-6 lg:py-12 ${
+				theme === "dark"
+					? "bg-gray-900 text-gray-100"
+					: "bg-gray-100 text-gray-900"
+			}`}
+			id="portfolio"
+		>
+			{/* Title */}
+			<h1 className="text-3xl lg:text-4xl font-bold tracking-wide text-[#16B0B2] mb-8">
+				Portfolio
+			</h1>
+
+			{/* Project Grid */}
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+				{projects.map((project) => (
+					<a
+						href={project.live}
+						rel="noreferrer"
+						target="_blank"
+						key={project.id}
+						className="relative"
+					>
+						<Tilt
+							tiltEnable={true}
+							tiltMaxAngleX={3}
+							tiltMaxAngleY={3}
+							scale={1.02}
+							transitionSpeed={1000}
+						>
+							{/* Minimalistic Project Card */}
+							<div
+								className={`rounded-lg overflow-hidden border transition-all duration-300 ${
+									theme === "dark"
+										? "bg-gray-800 border-gray-700"
+										: "bg-white border-gray-300"
+								}`}
+							>
+								{/* Image */}
+								<img
+									src={process.env.PUBLIC_URL + project.image}
+									alt={project.title}
+									className="w-full h-[180px] object-cover"
+								/>
+
+								{/* Project Info */}
+								<div className="p-4">
+									<h3
+										className={`text-xl font-semibold mb-2 transition ease-in-out ${
+											theme === "dark"
+												? "text-gray-100 hover:text-[#16B0B2]"
+												: "text-gray-900 hover:text-[#16B0B2]"
+										}`}
+									>
+										{project.title}
+									</h3>
+									<p
+										className={`text-sm mb-4 ${
+											theme === "dark" ? "text-gray-400" : "text-gray-600"
+										}`}
+									>
+										{project.description}
+									</p>
+
+									{/* Icons */}
+									<div className="flex justify-end space-x-4 text-xl">
+										<a
+											href={project.github}
+											target="_blank"
+											rel="noreferrer"
+											className={`hover:text-[#16B0B2] transition duration-300 ${
+												theme === "dark"
+													? "text-gray-400"
+													: "text-gray-600"
+											}`}
 										>
-											<li className="hover:text-[#16B0B2] transition ease-in-out delay-150">
-												<a href={project.github} target="_blank" rel="noreferrer">
-													<TbBrandGithub />
-												</a>
-											</li>
-											<li className="hover:text-[#16B0B2] transition ease-in-out delay-150">
-												<a href={project.live} target="_blank" rel="noreferrer">
-													<FiExternalLink />
-												</a>
-											</li>
-										</ul>
+											<TbBrandGithub />
+										</a>
+										<a
+											href={project.live}
+											target="_blank"
+											rel="noreferrer"
+											className={`hover:text-[#16B0B2] transition duration-300 ${
+												theme === "dark"
+													? "text-gray-400"
+													: "text-gray-600"
+											}`}
+										>
+											<FiExternalLink />
+										</a>
 									</div>
 								</div>
-							</Tilt>
-						</a>
-					))}
-				</div>
+							</div>
+						</Tilt>
+					</a>
+				))}
 			</div>
 		</main>
 	);

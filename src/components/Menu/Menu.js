@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import ThemeContext from "../../contexts/ThemeContext";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
@@ -9,28 +8,28 @@ const Menu = ({ isOpen, setOpen }) => {
 	return (
 		<div className="navbar-menu">
 			<div className="hidden lg:block text-base text-gray-600 font-semibold tracking-wider">
-				<ul
+				{/* <ul
 					className={`text-sm flex justify-evenly items-center tracking-wide space-x-4 ${theme === "dark" ? "dark-mode-white-text" : ""}`}
 				>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/">Home</Link>
+						<Link to="#">Home</Link>
 					</li>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/about">About</Link>
+						<Link to="#about">About</Link>
 					</li>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/skills">Skills</Link>
+						<Link to="#skills">Skills</Link>
 					</li>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/portfolio">Portfolio</Link>
+						<Link to="#portfolio">Portfolio</Link>
 					</li>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/exp">Experience</Link>
+						<Link to="#exp">Experience</Link>
 					</li>
 					<li className="cursor-pointer hover:text-[#16B0B2] transition-all duration-300 ease-in-out">
-						<Link to="/contact">Contact</Link>
+						<Link to="#contact">Contact</Link>
 					</li>
-				</ul>
+				</ul> */}
 			</div>
 			<div
 				onClick={toggleTheme}
