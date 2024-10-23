@@ -18,7 +18,7 @@ const projects = [
     {
         id: 3,
         title: 'E-Commerce Website',
-        description: 'Shop for your favourite products with our e-commerce website. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
+        description: 'Shop for your favorite products with our e-commerce website. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/ecommerce.png',
         github: 'https://github.com/saurabhbakolia/SCROLLME--ECOMMERCE-WEBSITE.git',
         live: 'https://scrollme.online',
@@ -39,22 +39,22 @@ const projects = [
         github: 'https://github.com/saurabhbakolia/Global_Weather.git',
         live: 'https://github.com/Kritika30032002/Global_Weather.git',
     },
-    {
-        id: 6,
-        title: 'Coding Infinity',
-        description: 'Discover the power of Coding Infinity! Our cutting-edge website boasts a sleek and responsive user interface, expertly crafted using the latest HTML, CSS , Bootstrap, and JavaScript technologies. Elevate your skills and unlock your potential with our comprehensive youtube playlist.',
-        image: '/coding_infinity.png',
-        github: '',
-        live: '',
-    },
-    {
-        id: 7,
-        title: 'CV Screener',
-        description: 'Revolutionize your hiring process with our CV Screener! Our state-of-the-art user interface, designed with the latest HTML, CSS and JavaScript technologies, allows you to quickly and efficiently screen thousands of CVs.',
-        image: 'cv_screener.png',
-        github: 'https://github.com/saurabhbakolia/CV-Screener.git',
-        live: 'http://screener.scrollme.online',
-    },
+    // {
+    //     id: 6,
+    //     title: 'Coding Infinity',
+    //     description: 'Discover the power of Coding Infinity! Our cutting-edge website boasts a sleek and responsive user interface, expertly crafted using the latest HTML, CSS , Bootstrap, and JavaScript technologies. Elevate your skills and unlock your potential with our comprehensive youtube playlist.',
+    //     image: '/coding_infinity.png',
+    //     github: '',
+    //     live: '',
+    // },
+    // {
+    //     id: 7,
+    //     title: 'CV Screener',
+    //     description: 'Revolutionize your hiring process with our CV Screener! Our state-of-the-art user interface, designed with the latest HTML, CSS and JavaScript technologies, allows you to quickly and efficiently screen thousands of CVs.',
+    //     image: 'cv_screener.png',
+    //     github: 'https://github.com/saurabhbakolia/CV-Screener.git',
+    //     live: 'http://screener.scrollme.online',
+    // },
     {
         id: 8,
         title: 'HJB Hall Website',
@@ -63,30 +63,30 @@ const projects = [
         github: 'https://github.com/saurabhbakolia/frontEnd.git',
         live: 'https://hjb.iitkgp.co.in/html/index.html',
     },
-    {
-        id: 9,
-        title: 'have i been pwned clone',
-        description: 'Check out the have i been pwned clone. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
-        image: '/haveyoubeenpwned.png',
-        github: 'https://github.com/saurabhbakolia/pwnedPassword.git',
-        live: 'https://github.com/saurabhbakolia/pwnedPassword.git',
-    },
-    {
-        id: 10,
-        title: 'Scrollme Stop Watch',
-        description: 'Check out the scrollme stop watch, designed to perfection using the React, Tailwind CSS.',
-        image: '/stop-watch.png',
-        github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app',
-        live: 'https://quinx.scrollme.online/',
-    },
-    {
-        id: 11,
-        title: 'ScrollMe Library',
-        description: 'ScrollMe Books: A Dynamic Library Management System',
-        image: '/library.png',
-        github: 'https://github.com/saurabhbakolia/Llibrary-Repo',
-        live: 'https://library.scrollme.online/',
-    },
+    // {
+    //     id: 9,
+    //     title: 'have i been pwned clone',
+    //     description: 'Check out the have i been pwned clone. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
+    //     image: '/haveyoubeenpwned.png',
+    //     github: 'https://github.com/saurabhbakolia/pwnedPassword.git',
+    //     live: 'https://github.com/saurabhbakolia/pwnedPassword.git',
+    // },
+    // {
+    //     id: 10,
+    //     title: 'Scrollme Stop Watch',
+    //     description: 'Check out the scrollme stop watch, designed to perfection using the React, Tailwind CSS.',
+    //     image: '/stop-watch.png',
+    //     github: 'https://github.com/saurabhbakolia/quinx-stopwatch-app',
+    //     live: 'https://quinx.scrollme.online/',
+    // },
+    // {
+    //     id: 11,
+    //     title: 'ScrollMe Library',
+    //     description: 'ScrollMe Books: A Dynamic Library Management System',
+    //     image: '/library.png',
+    //     github: 'https://github.com/saurabhbakolia/Llibrary-Repo',
+    //     live: 'https://library.scrollme.online/',
+    // },
     {
         id: 12,
         title: 'Expense Tracker App',
@@ -103,14 +103,14 @@ const projects = [
         github: 'https://github.com/saurabhbakolia/scrollmy-media-app', 
         live: 'https://scrollmy-media-app.vercel.app/'
     }, 
-    {
-        id: 14, 
-        title: 'ScrollMe Sales CRM', 
-        description: 'Empower your sales team with ScrollMe Sales CRM, a comprehensive platform for managing assignments, reviewing candidates, and streamlining the recruitment process. Create assignments, assign tasks, and review candidates seamlessly. Shortlist the best talent based on behavioral, communication, and situation handling scales. Access detailed candidate information, including name, profile, email, experience, hobbies, and introduction. Stay organized with assignment links, hours, and deadlines conveniently displayed. Enhance your recruitment efficiency with ScrollMe Sales CRM.', 
-        image: '/sales_crm.png', 
-        github: 'https://github.com/saurabhbakolia/sales_crm',
-        live: 'https://scrollme-sales-ihvccrohr-saurabh-bakolias-projects.vercel.app/'
-    }
+    // {
+    //     id: 14, 
+    //     title: 'ScrollMe Sales CRM', 
+    //     description: 'Empower your sales team with ScrollMe Sales CRM, a comprehensive platform for managing assignments, reviewing candidates, and streamlining the recruitment process. Create assignments, assign tasks, and review candidates seamlessly. Shortlist the best talent based on behavioral, communication, and situation handling scales. Access detailed candidate information, including name, profile, email, experience, hobbies, and introduction. Stay organized with assignment links, hours, and deadlines conveniently displayed. Enhance your recruitment efficiency with ScrollMe Sales CRM.', 
+    //     image: '/sales_crm.png', 
+    //     github: 'https://github.com/saurabhbakolia/sales_crm',
+    //     live: 'https://scrollme-sales-ihvccrohr-saurabh-bakolias-projects.vercel.app/'
+    // }
 ]
 
 export default projects;
