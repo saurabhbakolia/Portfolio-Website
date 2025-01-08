@@ -51,7 +51,7 @@ const PortfolioPage = () => {
 								<img
 									src={process.env.PUBLIC_URL + project.image}
 									alt={project.title}
-									className="w-full h-[180px] object-cover"
+									className="w-full h-[auto] object-cover"
 								/>
 
 								{/* Project Info */}

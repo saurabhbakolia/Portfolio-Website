@@ -103,14 +103,14 @@ const projects = [
         github: 'https://github.com/saurabhbakolia/scrollmy-media-app', 
         live: 'https://scrollmy-media-app.vercel.app/'
     }, 
-    // {
-    //     id: 14, 
-    //     title: 'ScrollMe Sales CRM', 
-    //     description: 'Empower your sales team with ScrollMe Sales CRM, a comprehensive platform for managing assignments, reviewing candidates, and streamlining the recruitment process. Create assignments, assign tasks, and review candidates seamlessly. Shortlist the best talent based on behavioral, communication, and situation handling scales. Access detailed candidate information, including name, profile, email, experience, hobbies, and introduction. Stay organized with assignment links, hours, and deadlines conveniently displayed. Enhance your recruitment efficiency with ScrollMe Sales CRM.', 
-    //     image: '/sales_crm.png', 
-    //     github: 'https://github.com/saurabhbakolia/sales_crm',
-    //     live: 'https://scrollme-sales-ihvccrohr-saurabh-bakolias-projects.vercel.app/'
-    // }
+    {
+        id: 14, 
+        title: 'ScrollMe Crypto Wallet', 
+        description: 'ScrollMe is a decentralized, secure, and user-friendly web-based wallet that allows users to effortlessly manage Ethereum and Solana wallets using a single seed phrase. Built with cutting-edge web technologies, ScrollMe ensures seamless interaction with blockchain networks while prioritizing user control and security.', 
+        image: 'scrollme_wallet.gif', 
+        github: 'https://github.com/saurabhbakolia/scrollme-web-wallet',
+        live: 'https://scrollme-web-wallet.vercel.app/'
+    }
 ]
 
 export default projects;

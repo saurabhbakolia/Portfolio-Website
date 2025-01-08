@@ -142,7 +142,7 @@ const experience = [
         id: 8,
         title: "Software Engineer",
         company: "Freelance",
-        date: "May 2024 - September 2024",
+        date: "May 2024 - Nov 2024",
         description: "Developed browser-based applications for the manufacturing sector startup using React.js, TypeScript, Material UI, and Jotai, enhancing user interfaces. Implemented backend functionality with Prisma ORM and SQL, integrating PostgreSQL for robust data management and utilizing TRPC for API development. Utilized the Hoops library for 3D CAD visualization and optimization, with Docker for containerization and AWS for cloud, ensuring streamlined processes.",
         skills: [
             { name: "React.js", icon: <FaReact className='text-teal-500 text-xs' /> },
