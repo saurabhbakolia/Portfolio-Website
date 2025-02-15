@@ -53,22 +53,20 @@ const ResumePage = () => {
 					<button
 						type="button"
 						onClick={() => navigate("/")}
-						className={`py-2 px-4 border rounded transition ${
-							theme === "dark"
-								? "border-gray-400 text-gray-200 hover:bg-gray-800"
-								: "border-gray-600 text-gray-800 hover:bg-gray-200"
-						}`}
+						className={`py-2 px-4 border rounded transition ${theme === "dark"
+							? "border-gray-400 text-gray-200 hover:bg-gray-800"
+							: "border-gray-600 text-gray-800 hover:bg-gray-200"
+							}`}
 					>
 						Home
 					</button>
 					<a
 						href={resumePDF}
 						download="Saurabh_Bakolia_Resume.pdf"
-						className={`py-2 px-4 border rounded transition ${
-							theme === "dark"
-								? "border-gray-400 text-gray-200 hover:bg-gray-800"
-								: "border-gray-600 text-gray-800 hover:bg-gray-200"
-						}`}
+						className={`py-2 px-4 border rounded transition ${theme === "dark"
+							? "border-gray-400 text-gray-200 hover:bg-gray-800"
+							: "border-gray-600 text-gray-800 hover:bg-gray-200"
+							}`}
 					>
 						Download Resume
 					</a>
@@ -89,6 +87,15 @@ const ResumePage = () => {
 					<h3 className="text-2xl font-semibold">Experience</h3>
 					<hr className="border-gray-300 my-2" />
 					{[
+						{
+							company: "Manufacturing Startup",
+							role: "Software Engineer",
+							duration: "May'01 - Nov'24",
+							responsibilities: [
+								"Developed browser-based applications for a manufacturing startup using React.js, TypeScript, and Jotai, enhancing UI/UX.",
+								"Implemented backend features with Prisma ORM and SQL, integrating PostgreSQL and utilizing TRPC for optimized API.", "Utilized the Hoops library for 3D CAD visualization and optimization, Docker for containerization, and AWS for cloud hosting"
+							],
+						},
 						{
 							company: "SyncMOF",
 							role: "Software Engineer",
@@ -151,6 +158,7 @@ const ResumePage = () => {
 							"HTML",
 							"CSS",
 							"JavaScript",
+							"Typescript",
 							"React.js",
 							"Tailwind CSS",
 							"Node.js",

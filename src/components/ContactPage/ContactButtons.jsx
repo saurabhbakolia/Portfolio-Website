@@ -1,6 +1,6 @@
 import React from "react";
 import StyledButton from "../CustomComponent/StyledButton";
-import resumePDF from "../../assets/resume.pdf";
+import { Link } from "react-router-dom";
 
 const ContactButtons = () => {
 	return (
@@ -19,14 +19,11 @@ const ContactButtons = () => {
 				</li>
 				<li>
 					<StyledButton>
-						<a
-							href={resumePDF}
-							download="Saurabh_Bakolia_Resume"
-							target="_blank"
-							rel="noreferrer"
+						<Link
+							to={"/resume"}
 						>
 							Download CV
-						</a>
+						</Link>
 					</StyledButton>
 				</li>
 			</ul>

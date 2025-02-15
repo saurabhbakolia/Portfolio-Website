@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import ThemeContext from "../contexts/ThemeContext";
-import SocialMediaIcons from "../components/SocialMediaIcons";
 import LandingPage from "../components/LandingPage/LandingPage";
-import AboutPage from "../components/AboutPage/AboutPage";
-import SkillPage from "../components/SkillsPage";
 import ExperiencePage from "../components/ExperiencePage";
 import ContactPage from "../components/ContactPage/ContactPage";
 import PortfolioPage from "../components/PortfolioPage";
+import ResumePage from "../components/ResumePage/ResumePage";
 
 const MainPage = () => {
 	const { theme } = useContext(ThemeContext);
@@ -20,6 +18,7 @@ const MainPage = () => {
 			<ExperiencePage />
 			<PortfolioPage />
 			<ContactPage />
+			<ResumePage />
 		</div>
 	);
 };
