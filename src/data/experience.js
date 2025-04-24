@@ -17,9 +17,9 @@ import {
     FaCodeBranch,
     FaServer,
     FaJava,
-    FaDocker, 
-    FaFileAlt, 
-    FaLock 
+    FaDocker,
+    FaFileAlt,
+    FaLock
 } from 'react-icons/fa';
 import {
     GrNode,
@@ -31,18 +31,19 @@ import {
     SiJsonwebtokens,
     SiJavascript,
     SiPhp,
-    SiPrisma ,
+    SiPrisma,
     SiExpress,
     SiTailwindcss,
     SiJquery,
     SiFlutter,
     SiTypescript,
-    SiFirebase, 
+    SiFirebase,
     SiSpringboot,
     SiNextdotjs,
     SiMaterialui,
     SiRedux,
-    SiApache
+    SiApache,
+    SiElectron,
 } from 'react-icons/si';
 
 const experience = [
@@ -151,6 +152,22 @@ const experience = [
             { name: "Prisma", icon: <SiPrisma className='text-purple-500 text-xs' /> },
             { name: "PostgreSQL", icon: <FaDatabase className='text-orange-600 text-xs' /> },
             { name: "Docker", icon: <FaDocker className='text-blue-600 text-xs' /> },
+        ],
+    },
+    {
+        id: 9,
+        title: "Software Engineer",
+        company: "Shadow Clone Research Labs",
+        date: "Feb 2025 - Mar 2025",
+        description: "Led backend development for a desktop application built on the Model Context Protocol (MCP), using Node.js, Express, and child processes to manage real-time streaming via Server-Sent Events (SSE). Engineered a secure project lifecycle system with encrypted file handling, bridged frontend-backend communication using stdin/stdout streams, and built key features for the Glutamate App. Optimized distributed architecture for handling multiple model contexts efficiently.",
+        skills: [
+            { name: "React.js", icon: <FaReact className='text-teal-500 text-xs' /> },
+            { name: "TypeScript", icon: <SiTypescript className='text-blue-600 text-xs' /> },
+            { name: "Electron.js", icon: <SiElectron className='text-purple-500 text-xs' /> },
+            { name: "Node", icon: <FaNodeJs className='text-green-600 text-xs' /> },
+            { name: "Express", icon: <SiExpress className='text-black text-xs' /> },
+            { name: "SSE", icon: null },
+            { name: "Model Context Protocol (MCP)", icon: null },
         ],
     },
 ];
