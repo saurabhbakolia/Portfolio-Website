@@ -1,19 +1,19 @@
 const projects = [
-    {
-        id: 1,
-        title: 'Travel Website',
-        description: 'Effortlessly book your trip using our sleek and user-friendly interface, designed with the latest HTML, CSS and JavaScript technologies.',
-        image: '/travel.png',
-        github: 'https://github.com/saurabhbakolia/Travel-Website.git',
-        live: 'https://travel.scrollme.online',
-    },
+    // {
+    //     id: 1,
+    //     title: 'Travel Website',
+    //     description: 'Effortlessly book your trip using our sleek and user-friendly interface, designed with the latest HTML, CSS and JavaScript technologies.',
+    //     image: '/travel.png',
+    //     github: 'https://github.com/saurabhbakolia/Travel-Website.git',
+    //     live: 'https://travel.scrollme.online',
+    // },
     {
         id: 2,
         title: 'Restaurant Website',
         description: 'Indulge in a culinary journey with our restaurant website. Our stunning and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/restaurant.png',
         github: 'https://github.com/saurabhbakolia/Restaurant-Website',
-        live: 'https://restaurant.scrollme.online',
+        live: 'https://classy-cactus-80379a.netlify.app/',
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const projects = [
         description: 'Shop for your favorite products with our e-commerce website. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/ecommerce.png',
         github: 'https://github.com/saurabhbakolia/SCROLLME--ECOMMERCE-WEBSITE.git',
-        live: 'https://scrollme.online',
+        live: 'https://scrollme-ecommerce-website-git-master-saurabh-bakolias-projects.vercel.app/',
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const projects = [
         description: 'Chat with your friends with our ScrollMe Chat App. Our sleek and responsive user interface, crafted with the latest HTML, CSS and JavaScript technologies.',
         image: '/chat.png',
         github: 'https://github.com/saurabhbakolia/Real-Time-Chat-App.git',
-        live: 'http://real-time-chat-app-coral.vercel.app/',
+        live: 'https://real-time-chat-app-git-master-saurabhbakolia.vercel.app/',
     },
     {
         id: 5,
@@ -93,21 +93,21 @@ const projects = [
         description: 'Track your expenses effortlessly with our Expense Tracker App. Manage your budgets, categorize expenses, and visualize spending patterns to make informed financial decisions. Stay on top of your finances with intuitive features and insightful reports.',
         image: '/Expense Tracker.png',
         github: 'https://github.com/saurabhbakolia/scrollme-expense-tracker',
-        live: 'https://scrollme-expense-tracker.vercel.app/'
+        live: 'https://expense.scrollme.store/'
     },
     {
         id: 13,
         title: 'Scroll My Media',
         description: 'Connect, share, and engage with SocialMe, a vibrant social media platform designed for meaningful interactions. Share your moments, explore diverse content, join communities, and build lasting connections with like-minded individuals. Experience a new level of social networking with SocialMe.',
-        image: '/scrollmy_media.png', 
-        github: 'https://github.com/saurabhbakolia/scrollmy-media-app', 
-        live: 'https://scrollmy-media-app.vercel.app/'
-    }, 
+        image: '/scrollmy_media.png',
+        github: 'https://github.com/saurabhbakolia/scrollmy-media-app',
+        live: 'https://scrollmy-media-app-git-master-saurabh-bakolias-projects.vercel.app/'
+    },
     {
-        id: 14, 
-        title: 'ScrollMe Crypto Wallet', 
-        description: 'ScrollMe is a decentralized, secure, and user-friendly web-based wallet that allows users to effortlessly manage Ethereum and Solana wallets using a single seed phrase. Built with cutting-edge web technologies, ScrollMe ensures seamless interaction with blockchain networks while prioritizing user control and security.', 
-        image: 'scrollme_wallet.gif', 
+        id: 14,
+        title: 'ScrollMe Crypto Wallet',
+        description: 'ScrollMe is a decentralized, secure, and user-friendly web-based wallet that allows users to effortlessly manage Ethereum and Solana wallets using a single seed phrase. Built with cutting-edge web technologies, ScrollMe ensures seamless interaction with blockchain networks while prioritizing user control and security.',
+        image: 'scrollme_wallet.gif',
         github: 'https://github.com/saurabhbakolia/scrollme-web-wallet',
         live: 'https://scrollme-web-wallet.vercel.app/'
     }
