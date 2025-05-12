@@ -6,6 +6,7 @@ import ExperiencePage from "../components/ExperiencePage";
 import ContactPage from "../components/ContactPage/ContactPage";
 import PortfolioPage from "../components/PortfolioPage";
 import ResumePage from "../components/ResumePage/ResumePage";
+import Footer from "../components/FooterPage/FooterPage";
 
 const MainPage = () => {
 	const { theme } = useContext(ThemeContext);
@@ -18,7 +19,7 @@ const MainPage = () => {
 			<ExperiencePage />
 			<PortfolioPage />
 			<ContactPage />
-			<ResumePage />
+			<Footer />
 		</div>
 	);
 };
