@@ -44,15 +44,52 @@ import {
     SiRedux,
     SiApache,
     SiElectron,
+    SiSupabase,
+    SiPython,
+    SiOpenai,
+    SiAngular,
+    SiDotnet,
+    SiMicrosoftazure,
+    SiVercel,
 } from 'react-icons/si';
 
 const experience = [
     {
-        id: 1,
+        id: "exp_golpo_ai_2025",
+        title: "Software Engineer",
+        company: "Golpo AI",
+        date: "June 2025 - Current",
+        description: "Full-stack engineering for Golpo AI supporting 110,000+ users. Designed, built, and maintained the Golpo API across v1 and v2 with stable releases and clear versioning. Delivered front-end UX improvements and net-new product capabilities in close iteration with stakeholders. Raised security posture through hardening, reviews, and safer integration patterns across the stack.",
+        skills: [
+            { name: "Next.js", icon: <SiNextdotjs className='text-black text-xs' /> },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className='text-blue-600 text-xs' /> },
+            { name: "AWS Services", icon: <FaAws className='text-orange-600 text-xs' /> },
+            { name: "Supabase", icon: <SiSupabase className='text-green-600 text-xs' /> },
+            { name: "Python", icon: <SiPython className='text-yellow-600 text-xs' /> },
+            { name: "OpenAI", icon: <SiOpenai className='text-gray-800 text-xs' /> },
+        ],
+    },
+    {
+        id: "exp_cambridge_tel_2025",
+        title: "Software Engineer",
+        company: "Cambridge Technology Enterprises Limited, Hyderabad",
+        date: "2025 - Present",
+        description: "Developed a Resource Tracker web application on Angular with JWT-authenticated ASP.NET services and a SQL Server data tier, optimizing access paths with stored procedures and table-valued parameters (TVPs). Owned production support: triage and resolution of defects, incremental feature delivery, and reliable releases to Vercel and Microsoft Azure environments.",
+        skills: [
+            { name: "Angular", icon: <SiAngular className='text-red-600 text-xs' /> },
+            { name: "ASP.NET", icon: <SiDotnet className='text-purple-600 text-xs' /> },
+            { name: "SQL Server", icon: <FaDatabase className='text-orange-600 text-xs' /> },
+            { name: "JWT", icon: <SiJsonwebtokens className='text-black text-xs' /> },
+            { name: "Azure", icon: <SiMicrosoftazure className='text-blue-600 text-xs' /> },
+            { name: "Vercel", icon: <SiVercel className='text-black text-xs' /> },
+        ],
+    },
+    {
+        id: "exp_syncmof_2024",
         title: "Front-end Engineer",
         company: "SyncMOF Institute IIT Kharagpur",
         date: "May 2024 - July 2024",
-        description: "Led front-end of the Black Box project using ReactJS and Tailwind CSS, ensuring scalable UI and streamlined deployments with CI/CD and AWS Amplify. Architected a robust UI/UX and wireframe for a platform with Figma and leveraged AWS Amplify Auth and managed cloud resources with CloudWatch. Optimized complex flows using React Flow to enhance efficiency and user experience and implemented AWS CloudTrain for workflow and management. Collaborated on scalable architecture with Docker and AWS, including Elastic Beanstalk and Amplify and used AWS CloudWatch to improve system.",
+        description: "Led front-end delivery for the Black Box project using React and Tailwind CSS, with CI/CD and AWS Amplify for repeatable deployments. Produced platform UI/UX and wireframes in Figma; integrated Amplify Auth and operational visibility via CloudWatch. Simplified high-complexity workflows with React Flow for clearer operator UX. Partnered on containerized and cloud-native architecture using Docker, Elastic Beanstalk, and Amplify, with monitoring and alerting through CloudWatch.",
         skills: [
             { name: "React.js", icon: <FaReact className='text-teal-500 text-xs' /> },
             { name: "Tailwind CSS", icon: <SiTailwindcss className='text-blue-600 text-xs' /> },
@@ -63,7 +100,7 @@ const experience = [
         ],
     },
     {
-        id: 2,
+        id: "exp_darzee_2023",
         title: "Full-stack Developer",
         company: "Darzee",
         date: "October 2023 - February 2024",
@@ -77,11 +114,11 @@ const experience = [
         ],
     },
     {
-        id: 3,
+        id: "exp_noccarc_2023",
         title: "Full-stack Developer Intern",
         company: "Noccarc Robotics",
         date: "May 2023 - September 2023",
-        description: "Engineered a full-stack admin dashboard with ReactJS and Redux for V730i ventilator OTA updates and leveraged WebSocket for real-time updates. Deployed backend on AWS EC2, using Node/Express and Multer for file uploads, and AWS SDK S3 for secure and scalable storage of system versions. Implemented REST API and JWT authentication to ensure robust and secure communication between the admin dashboard and ventilator machines. Engineered a CMS mobile app for patient monitoring with React Native and utilized WebSocket, Redux, and Kafka, and neatly implemented REST API.",
+        description: "Engineered a full-stack admin dashboard with ReactJS and Redux for V730i ventilator OTA updates and leveraged WebSocket for real-time updates. Deployed backend on AWS EC2, using Node/Express and Multer for file uploads, and AWS SDK S3 for secure and scalable storage of system versions. Implemented REST API and JWT authentication to ensure robust and secure communication between the admin dashboard and ventilator machines. Built a CMS mobile app for patient monitoring with React Native, WebSocket, Redux, and Kafka, backed by a REST API.",
         skills: [
             { name: "React.js", icon: <FaReact className='text-teal-500 text-xs' /> },
             { name: "Redux", icon: null },
@@ -92,7 +129,7 @@ const experience = [
         ],
     },
     {
-        id: 4,
+        id: "exp_hippiees_2023",
         title: "Full-stack Web Developer",
         company: "Hippiees",
         date: "January 2023 - March 2023",
@@ -105,7 +142,7 @@ const experience = [
         ],
     },
     {
-        id: 5,
+        id: "exp_leads4needs_2022",
         title: "Frontend Web Developer",
         company: "Leads4Needs",
         date: "June 2022 - July 2022",
@@ -118,11 +155,11 @@ const experience = [
         ],
     },
     {
-        id: 6,
+        id: "exp_kwoc_2022",
         title: "Open-Source Contributor",
         company: "Kharagpur Winter of Code",
         date: "November 2022 - February 2023",
-        description: "Collaborated with contributors on the development of the Global Weather web application, leveraging the tech stack of HTML, CSS, Pug, and JavaScript. Made notable contributions to the codebase by adding over 2.k+ lines of code, utilized Git/GitHub for version control, ensured code management and reviews. Seamlessly integrated the Realtime OpenWeatherMap API to retrieve current weather data, utilizing Node.js/Express.js and asynchronous processing.",
+        description: "Contributed to the Global Weather web application (HTML, CSS, Pug, JavaScript), shipping substantive features and refactors with Git-based workflow and peer review. Integrated the OpenWeatherMap API using Node.js and Express with asynchronous request handling for live conditions.",
         skills: [
             { name: "HTML", icon: <FaHtml5 className='text-orange-600 text-xs' /> },
             { name: "CSS", icon: <FaCss3 className='text-green-600 text-xs' /> },
@@ -132,15 +169,15 @@ const experience = [
         ],
     },
     {
-        id: 7,
+        id: "exp_hacktoberfest_2023",
         title: "Open Source Developer",
         company: "Hacktoberfest",
         date: "October 2023 - November 2023",
-        description: "Actively participated in Hacktoberfest by contributing to diverse open-source projects, focusing on feature enhancements, bug fixes, and comprehensive documentation improvements. Collaborated with a global network of developers, gaining valuable experience in Git, continuous integration, and collaborative coding practices. Proud to support the promotion of open-source contributions and foster a community of innovation and learning.",
+        description: "Contributed to multiple open-source repositories during Hacktoberfest: feature work, defect fixes, and documentation improvements merged upstream. Practiced distributed collaboration with Git, pull-request review, and CI-aware changesets across varied codebases.",
         skills: [],
     },
     {
-        id: 8,
+        id: "exp_freelance_2024",
         title: "Software Engineer",
         company: "Freelance",
         date: "May 2024 - Nov 2024",
@@ -155,7 +192,7 @@ const experience = [
         ],
     },
     {
-        id: 9,
+        id: "exp_shadow_clone_2025",
         title: "Software Engineer",
         company: "Shadow Clone Research Labs",
         date: "Feb 2025 - Mar 2025",
