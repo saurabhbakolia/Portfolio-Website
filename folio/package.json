@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Minimal portfolio inspired by here.now — quiet, information-first.",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
