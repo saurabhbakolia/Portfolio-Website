@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: light;
+}
+
+html,
+body {
+	background: #efede4;
+	color: #0f1414;
+	font-family: "Inter", system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "ss01", "cv11";
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+}
+
+::selection {
+	background: #3e6b68;
+	color: #f7f5ee;
+}
+
+@layer base {
+	a {
+		text-decoration: none;
+	}
+}
+
+@layer components {
+	.container-prose {
+		@apply mx-auto w-full max-w-5xl px-6 sm:px-10;
+	}
+	.label-mono {
+		@apply font-mono text-xs uppercase tracking-[0.18em] text-muted;
+	}
+	.link-underline {
+		position: relative;
+		display: inline-flex;
+		align-items: baseline;
+	}
+	.link-underline::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -2px;
+		height: 1px;
+		background: currentColor;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 200ms ease;
+	}
+	.link-underline:hover::after,
+	.link-underline:focus-visible::after {
+		transform: scaleX(1);
+	}
+	.btn-primary {
+		@apply inline-flex items-center gap-2 bg-ink px-5 py-3 font-mono text-xs uppercase tracking-[0.18em] text-surface transition-colors duration-200 hover:bg-accent;
+	}
+	.btn-ghost {
+		@apply inline-flex items-center gap-2 border border-border bg-transparent px-5 py-3 font-mono text-xs uppercase tracking-[0.18em] text-ink transition-colors duration-200 hover:border-ink;
+	}
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(8px);
+	transition:
+		opacity 600ms ease,
+		transform 600ms ease;
+	will-change: opacity, transform;
+}
+.reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	.link-underline::after {
+		transition: none;
+	}
+}
